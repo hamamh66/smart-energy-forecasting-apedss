@@ -1,2 +1,2 @@
 # smart-energy-forecasting-apedss
-APEDSS: an explainable and decision-centric framework for renewable energy forecasting, counterfactual analysis, and IoT-enabled energy management using machine learning, LIME, and policy-based decision support.
+A reproducible notebook for renewable energy forecasting and decision support using machine learning, LIME explainability, and DiCE counterfactual analysis, enabling intelligent and IoT-ready energy management.
