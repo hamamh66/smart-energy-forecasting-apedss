@@ -1,0 +1,8 @@
+Regime,N_test,CQR_eta_Wh,Coverage_CQR,Median_Width_Wh,Coverage_OK
+low_gen,47794,0.0,0.984747,0.09,True
+ramp,10317,0.0,0.911602,553.81,True
+stable,10488,40.63573871997323,0.912757,1752.62,True
+high_vol,10112,32.534396304079564,0.897053,3576.95,True
+symmetric_80%,78711,,0.801057,18.76,True
+symmetric_90%,78711,,0.901907,29.24,True
+symmetric_95%,78711,,0.950934,40.35,True
