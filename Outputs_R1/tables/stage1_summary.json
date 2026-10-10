@@ -1,0 +1,812 @@
+{
+  "n_features": 24,
+  "features": [
+    "GHI",
+    "temp",
+    "pressure",
+    "humidity",
+    "wind_speed",
+    "rain_1h",
+    "snow_1h",
+    "clouds_all",
+    "isSun",
+    "sunlightTime",
+    "dayLength",
+    "SunlightTime/daylength",
+    "weather_type",
+    "hour",
+    "month",
+    "minute",
+    "dayofyear",
+    "weekday",
+    "hour_sin",
+    "hour_cos",
+    "minute_sin",
+    "minute_cos",
+    "dayofyear_sin",
+    "dayofyear_cos"
+  ],
+  "n_records": 196776,
+  "time_span": [
+    "2017-01-01 00:00:00",
+    "2022-08-31 17:45:00"
+  ],
+  "chrono": {
+    "n_train": 137743,
+    "n_test": 59033,
+    "n_proper": 110194,
+    "n_cal": 27549,
+    "test_span": [
+      "2020-12-11 19:45:00",
+      "2022-08-31 17:45:00"
+    ],
+    "cal_span": [
+      "2020-02-28 20:30:00",
+      "2020-12-11 19:30:00"
+    ],
+    "et100": {
+      "R2": 0.9031583463900179,
+      "RMSE": 322.27561064714985,
+      "MAE": 128.06159876679143,
+      "MSE": 103861.56921799332,
+      "MedAE": 3.6299999999999955,
+      "MaxErr": 4116.51,
+      "train_s": 23.651161909103394,
+      "nRMSE_pct_of_mean_active": 27.55924610584805,
+      "nRMSE_pct_of_max": 6.419832881417327,
+      "MAE_active": 241.67720548599502,
+      "RMSE_active": 413.08758271746285
+    },
+    "eta": {
+      "low_gen": 0.0,
+      "ramp": 0.0,
+      "stable": 0.0,
+      "high_vol": 0.0
+    },
+    "n_cal_regime": {
+      "low_gen": 16082,
+      "ramp": 3822,
+      "stable": 3822,
+      "high_vol": 3823
+    },
+    "k_cal_regime": {
+      "low_gen": 14475,
+      "ramp": 3441,
+      "stable": 3441,
+      "high_vol": 3442
+    },
+    "eta_global": 0.0,
+    "k_global": 24795,
+    "regime_breaks_Wh": [
+      192.93941666666666,
+      688.6268055555555,
+      2128.808958333333
+    ],
+    "cal_regime_counts_pos_only": {
+      "low_gen": 3823,
+      "ramp": 3822,
+      "stable": 3822,
+      "high_vol": 3823
+    },
+    "et300_metrics": {
+      "R2": 0.902386419946965,
+      "RMSE": 323.55749338555495,
+      "MAE": 127.438044649428
+    },
+    "coverage_marginal": 0.9524842037504446,
+    "coverage_global_eta": 0.9524842037504446,
+    "median_width": 53.950078682432064,
+    "coverage_by_regime": [
+      {
+        "regime": "low_gen",
+        "n_test": 36259,
+        "coverage": 0.9791500041369039,
+        "coverage_global_eta": 0.9791500041369039,
+        "median_width": 0.08924702204727553
+      },
+      {
+        "regime": "ramp",
+        "n_test": 7940,
+        "coverage": 0.9021410579345088,
+        "coverage_global_eta": 0.9021410579345088,
+        "median_width": 651.6989207559466
+      },
+      {
+        "regime": "stable",
+        "n_test": 7816,
+        "coverage": 0.901100307062436,
+        "coverage_global_eta": 0.901100307062436,
+        "median_width": 1914.0383194832948
+      },
+      {
+        "regime": "high_vol",
+        "n_test": 7018,
+        "coverage": 0.9288971216870904,
+        "coverage_global_eta": 0.9288971216870904,
+        "median_width": 3665.8305194933923
+      }
+    ],
+    "coverage_spread_regime": 0.07804969707446785,
+    "coverage_spread_global": 0.07804969707446785,
+    "worst_regime_cov": 0.901100307062436,
+    "worst_regime_cov_global": 0.901100307062436,
+    "coverage_raw_quantiles": 0.9524842037504446,
+    "active_thr": 50.0,
+    "demand_proxy": 1010.0044999999997,
+    "capacity_proxy": 3574.4161111111116,
+    "sigma_q99": 837.7691126158476,
+    "sigma_p33": 2.229655456442269,
+    "sigma_p67": 165.77834550830573,
+    "timing_us": {
+      "point_us": 20.302444786793064,
+      "quant_us": 2.0095245620841014,
+      "spread_us": 72.09403764496204
+    },
+    "fit_s": {
+      "et300": 44.8825421333313,
+      "qr": 61.69873356819153
+    },
+    "corr_spread_width": {
+      "pearson_active": 0.756946198235658,
+      "spearman_active": 0.830676625688403,
+      "n_active": 27983,
+      "pearson_all": 0.8711392878174182,
+      "spearman_all": 0.9767572318031278
+    },
+    "corr_by_regime": {
+      "low_gen": 0.9758920812196225,
+      "ramp": 0.42010022581194995,
+      "stable": 0.5205987102681964,
+      "high_vol": -0.1801603054057178
+    },
+    "policy_ablation": {
+      "Naive": {
+        "CE": 1.0,
+        "OCR": 0.30982670709603105,
+        "WOCR": 0.124640986765147,
+        "mean_shortfall_Wh": 242.8526150474715,
+        "mean_withheld_Wh": 0.0
+      },
+      "Fixed-margin 0.80": {
+        "CE": 0.8,
+        "OCR": 0.1768502363085054,
+        "WOCR": 0.06981510252629085,
+        "mean_shortfall_Wh": 190.64897719333456,
+        "mean_withheld_Wh": 120.73432340774421
+      },
+      "RCCRI (spread-based beta)": {
+        "CE": 0.8345507011525505,
+        "OCR": 0.19653414192062066,
+        "WOCR": 0.0786119941653134,
+        "mean_shortfall_Wh": 201.51356659872707,
+        "mean_withheld_Wh": 99.87704577316241
+      },
+      "RCCRI (CQR-width-based beta)": {
+        "CE": 0.7979086423325592,
+        "OCR": 0.18958887401961616,
+        "WOCR": 0.08054588658679425,
+        "mean_shortfall_Wh": 204.63713412838652,
+        "mean_withheld_Wh": 121.99681667265445
+      },
+      "Lower conformal bound": {
+        "CE": 0.0,
+        "OCR": 0.0,
+        "WOCR": 0.0,
+        "mean_shortfall_Wh": 0.0,
+        "mean_withheld_Wh": 603.6716170387211
+      },
+      "Lower bound, floored at 0.70*yhat": {
+        "CE": 0.6987928976804931,
+        "OCR": 0.1086172141005878,
+        "WOCR": 0.05284093987405025,
+        "mean_shortfall_Wh": 205.22067587249597,
+        "mean_withheld_Wh": 181.83017852076415
+      }
+    },
+    "lower_bound_violation_active": 0.0,
+    "alpha_u_sensitivity": [
+      {
+        "CE": 0.9437006124608439,
+        "OCR": 0.24125489133196687,
+        "WOCR": 0.10511460382155781,
+        "mean_shortfall_Wh": 248.2115144901287,
+        "mean_withheld_Wh": 33.986342314052045,
+        "alpha_u": 0.1,
+        "beta_min": 0.9
+      },
+      {
+        "CE": 0.9164131346337705,
+        "OCR": 0.22805888232005828,
+        "WOCR": 0.09726036018128957,
+        "mean_shortfall_Wh": 235.92879204954338,
+        "mean_withheld_Wh": 50.45901817882963,
+        "alpha_u": 0.15,
+        "beta_min": 0.85
+      },
+      {
+        "CE": 0.8891256568066972,
+        "OCR": 0.21550658106482815,
+        "WOCR": 0.09035160092766759,
+        "mean_shortfall_Wh": 225.02937536656165,
+        "mean_withheld_Wh": 66.93169404360724,
+        "alpha_u": 0.2,
+        "beta_min": 0.8
+      },
+      {
+        "CE": 0.8618381789796239,
+        "OCR": 0.20549523148069723,
+        "WOCR": 0.08417712607966775,
+        "mean_shortfall_Wh": 213.11736209764913,
+        "mean_withheld_Wh": 83.40436990838482,
+        "alpha_u": 0.25,
+        "beta_min": 0.75
+      },
+      {
+        "CE": 0.8345507011525505,
+        "OCR": 0.19653414192062066,
+        "WOCR": 0.0786119941653134,
+        "mean_shortfall_Wh": 201.51356659872707,
+        "mean_withheld_Wh": 99.87704577316241,
+        "alpha_u": 0.3,
+        "beta_min": 0.7
+      },
+      {
+        "CE": 0.8072632233254774,
+        "OCR": 0.1875730523605441,
+        "WOCR": 0.0736331182899718,
+        "mean_shortfall_Wh": 191.3016305794625,
+        "mean_withheld_Wh": 116.34972163794,
+        "alpha_u": 0.35,
+        "beta_min": 0.65
+      },
+      {
+        "CE": 0.7799757454984039,
+        "OCR": 0.17966222282452188,
+        "WOCR": 0.06914050931876232,
+        "mean_shortfall_Wh": 181.19977777886908,
+        "mean_withheld_Wh": 132.8223975027176,
+        "alpha_u": 0.4,
+        "beta_min": 0.6
+      }
+    ],
+    "alpha_max_sensitivity": [
+      {
+        "alpha_max": 0.05,
+        "cap_active_frac": 1.0,
+        "mean_reserve_active_Wh": 63.56554653087986,
+        "reserve_ratio_active": 0.049999999999999996,
+        "shortfall_covered": 0.5158131722831719
+      },
+      {
+        "alpha_max": 0.1,
+        "cap_active_frac": 1.0,
+        "mean_reserve_active_Wh": 127.13109306175971,
+        "reserve_ratio_active": 0.09999999999999999,
+        "shortfall_covered": 0.5911803595039845
+      },
+      {
+        "alpha_max": 0.15,
+        "cap_active_frac": 1.0,
+        "mean_reserve_active_Wh": 190.69663959263957,
+        "reserve_ratio_active": 0.15,
+        "shortfall_covered": 0.6476432119501125
+      },
+      {
+        "alpha_max": 0.2,
+        "cap_active_frac": 1.0,
+        "mean_reserve_active_Wh": 254.26218612351943,
+        "reserve_ratio_active": 0.19999999999999998,
+        "shortfall_covered": 0.6929207018546975
+      },
+      {
+        "alpha_max": 0.25,
+        "cap_active_frac": 0.9999642640174392,
+        "mean_reserve_active_Wh": 317.82765350328566,
+        "reserve_ratio_active": 0.24999993774055446,
+        "shortfall_covered": 0.7358038809277061
+      },
+      {
+        "alpha_max": 0.3,
+        "cap_active_frac": 0.9998570560697566,
+        "mean_reserve_active_Wh": 381.3924100139554,
+        "reserve_ratio_active": 0.29999931631884624,
+        "shortfall_covered": 0.7708608798198906
+      },
+      {
+        "alpha_max": 0.4,
+        "cap_active_frac": 0.9982846728370797,
+        "mean_reserve_active_Wh": 508.5049601055809,
+        "reserve_ratio_active": 0.3999847306107495,
+        "shortfall_covered": 0.8321123539291713
+      },
+      {
+        "alpha_max": 0.5,
+        "cap_active_frac": 0.9873137261909016,
+        "mean_reserve_active_Wh": 635.4299608300793,
+        "reserve_ratio_active": 0.49982262051455045,
+        "shortfall_covered": 0.8784261873280206
+      },
+      {
+        "alpha_max": 1.0,
+        "cap_active_frac": 0.20558910767251545,
+        "mean_reserve_active_Wh": 832.8875187516678,
+        "reserve_ratio_active": 0.6551406887904714,
+        "shortfall_covered": 0.9648357931601329
+      }
+    ],
+    "batch_regime_counts": {
+      "renewable_low_activity": 525,
+      "active_deficit": 264,
+      "uncertain_active_production": 176,
+      "balanced_operation": 20,
+      "active_surplus": 15
+    },
+    "batch_action_counts": {
+      "renewable_idle_monitoring": 525,
+      "battery_activation": 199,
+      "hold_and_review": 176,
+      "controlled_load_adjustment": 65,
+      "normal_operation": 20,
+      "energy_storage": 15
+    },
+    "batch_unc_counts": {
+      "Low": 469,
+      "High": 307,
+      "Moderate": 224
+    },
+    "batch_active": {
+      "n": 475,
+      "mean_pred": 1268.8842240935671,
+      "mean_commit": 1055.273567174162,
+      "reserve_ratio": 0.25
+    },
+    "batch_by_regime": {
+      "active_deficit": {
+        "n": 264,
+        "mean_pred": 375.55254545454545,
+        "mean_commit": 342.08165587412634
+      },
+      "active_surplus": {
+        "n": 15,
+        "mean_pred": 1392.256711111111,
+        "mean_commit": 1217.1297148507651
+      },
+      "balanced_operation": {
+        "n": 20,
+        "mean_pred": 1158.1881666666666,
+        "mean_commit": 1000.6675541494105
+      },
+      "renewable_low_activity": {
+        "n": 525,
+        "mean_pred": 1.8143926984126986,
+        "mean_commit": 0.0
+      },
+      "uncertain_active_production": {
+        "n": 176,
+        "mean_pred": 2610.946138888889,
+        "mean_commit": 2117.472104836408
+      }
+    },
+    "full_test_regime_counts": {
+      "renewable_low_activity": 31050,
+      "active_deficit": 15592,
+      "uncertain_active_production": 10381,
+      "balanced_operation": 1137,
+      "active_surplus": 873
+    },
+    "full_test_action_counts": {
+      "renewable_idle_monitoring": 31050,
+      "battery_activation": 11743,
+      "hold_and_review": 10381,
+      "controlled_load_adjustment": 3849,
+      "normal_operation": 1137,
+      "energy_storage": 873
+    },
+    "reserve_cap_active_frac": 0.9999642640174392,
+    "reserve_ratio_active_full": 0.24999993774055446,
+    "ACI_gamma0.002": {
+      "coverage": 0.9543983873426728,
+      "median_width": 53.950078682432064,
+      "by_regime": {
+        "low_gen": 0.9791500041369039,
+        "ramp": 0.9113350125944585,
+        "stable": 0.9062180143295804,
+        "high_vol": 0.9288971216870904
+      }
+    },
+    "ACI_gamma0.005": {
+      "coverage": 0.9546863618653973,
+      "median_width": 53.950078682432064,
+      "by_regime": {
+        "low_gen": 0.9791500041369039,
+        "ramp": 0.9125944584382871,
+        "stable": 0.9071136131013307,
+        "high_vol": 0.9288971216870904
+      }
+    },
+    "ACI_gamma0.01": {
+      "coverage": 0.9547710602544339,
+      "median_width": 53.950078682432064,
+      "by_regime": {
+        "low_gen": 0.9791500041369039,
+        "ramp": 0.9130982367758187,
+        "stable": 0.9072415557830092,
+        "high_vol": 0.9288971216870904
+      }
+    }
+  },
+  "random": {
+    "n_train": 118065,
+    "n_test": 78711,
+    "n_proper": 94452,
+    "n_cal": 23613,
+    "test_span": [
+      "2017-01-01 00:00:00",
+      "2022-08-31 17:45:00"
+    ],
+    "cal_span": [
+      "2017-01-01 00:30:00",
+      "2022-08-31 15:30:00"
+    ],
+    "et100": {
+      "R2": 0.9347735610626086,
+      "RMSE": 266.8928007994869,
+      "MAE": 106.73368512660238,
+      "MSE": 71231.7671185946,
+      "MedAE": 2.269999999999996,
+      "MaxErr": 3794.7,
+      "train_s": 24.75863242149353,
+      "nRMSE_pct_of_mean_active": 22.70076133058218,
+      "nRMSE_pct_of_max": 5.316589657360297,
+      "MAE_active": 208.07312153906148,
+      "RMSE_active": 361.08352583173763
+    },
+    "eta": {
+      "low_gen": 0.0,
+      "ramp": 0.0,
+      "stable": 44.6701312575417,
+      "high_vol": 28.30533421696373
+    },
+    "n_cal_regime": {
+      "low_gen": 14345,
+      "ramp": 3089,
+      "stable": 3089,
+      "high_vol": 3090
+    },
+    "k_cal_regime": {
+      "low_gen": 12912,
+      "ramp": 2781,
+      "stable": 2781,
+      "high_vol": 2782
+    },
+    "eta_global": 0.0,
+    "k_global": 21253,
+    "regime_breaks_Wh": [
+      161.26715277777777,
+      571.8330555555556,
+      1874.7436111111106
+    ],
+    "cal_regime_counts_pos_only": {
+      "low_gen": 3090,
+      "ramp": 3089,
+      "stable": 3089,
+      "high_vol": 3090
+    },
+    "et300_metrics": {
+      "R2": 0.9334372056783766,
+      "RMSE": 269.61298059966686,
+      "MAE": 107.97397247031688
+    },
+    "coverage_marginal": 0.9541614259760389,
+    "coverage_global_eta": 0.9502356722694414,
+    "median_width": 32.37847224101292,
+    "coverage_by_regime": [
+      {
+        "regime": "low_gen",
+        "n_test": 47803,
+        "coverage": 0.9847708302826182,
+        "coverage_global_eta": 0.9847708302826182,
+        "median_width": 0.09380057246156753
+      },
+      {
+        "regime": "ramp",
+        "n_test": 10298,
+        "coverage": 0.9110506894542629,
+        "coverage_global_eta": 0.9110506894542629,
+        "median_width": 553.5782413066808
+      },
+      {
+        "regime": "stable",
+        "n_test": 10514,
+        "coverage": 0.9135438463001712,
+        "coverage_global_eta": 0.8992771542704965,
+        "median_width": 1761.4332930180667
+      },
+      {
+        "regime": "high_vol",
+        "n_test": 10096,
+        "coverage": 0.8955031695721077,
+        "coverage_global_eta": 0.8797543581616482,
+        "median_width": 3570.077804182924
+      }
+    ],
+    "coverage_spread_regime": 0.08926766071051051,
+    "coverage_spread_global": 0.1050164721209701,
+    "worst_regime_cov": 0.8955031695721077,
+    "worst_regime_cov_global": 0.8797543581616482,
+    "coverage_raw_quantiles": 0.9502356722694414,
+    "active_thr": 50.0,
+    "demand_proxy": 953.1451111111105,
+    "capacity_proxy": 3525.2683888888896,
+    "sigma_q99": 797.1769984762085,
+    "sigma_p33": 1.9674319819202626,
+    "sigma_p67": 122.47963986403363,
+    "timing_us": {
+      "point_us": 32.97081082827211,
+      "quant_us": 4.779306407793299,
+      "spread_us": 93.81883919297353
+    },
+    "fit_s": {
+      "et300": 44.33891844749451,
+      "qr": 55.251526832580566
+    },
+    "corr_spread_width": {
+      "pearson_active": 0.7237129718723532,
+      "spearman_active": 0.8102347282028411,
+      "n_active": 36754,
+      "pearson_all": 0.8532404909485664,
+      "spearman_all": 0.9768192812677002
+    },
+    "corr_by_regime": {
+      "low_gen": 0.9877249674460998,
+      "ramp": 0.46089719978751187,
+      "stable": 0.5231771656813501,
+      "high_vol": -0.1704607280146657
+    },
+    "policy_ablation": {
+      "Naive": {
+        "CE": 1.0,
+        "OCR": 0.2789953119640203,
+        "WOCR": 0.09563080761078047,
+        "mean_shortfall_Wh": 197.74884047655186,
+        "mean_withheld_Wh": 0.0
+      },
+      "Fixed-margin 0.80": {
+        "CE": 0.7999999999999998,
+        "OCR": 0.15976165974260267,
+        "WOCR": 0.050421864301110245,
+        "mean_shortfall_Wh": 145.66303363665628,
+        "mean_withheld_Wh": 115.38331802827821
+      },
+      "RCCRI (spread-based beta)": {
+        "CE": 0.8414412240081045,
+        "OCR": 0.17541385575078453,
+        "WOCR": 0.056016973395764745,
+        "mean_shortfall_Wh": 155.02172260656022,
+        "mean_withheld_Wh": 91.47518838223695
+      },
+      "RCCRI (CQR-width-based beta)": {
+        "CE": 0.7968406254916776,
+        "OCR": 0.17299996188588634,
+        "WOCR": 0.06090480776483586,
+        "mean_shortfall_Wh": 161.8415633547408,
+        "mean_withheld_Wh": 117.2060135965993
+      },
+      "Lower conformal bound": {
+        "CE": 0.0,
+        "OCR": 0.0,
+        "WOCR": 0.0,
+        "mean_shortfall_Wh": 0.0,
+        "mean_withheld_Wh": 576.9165901413913
+      },
+      "Lower bound, floored at 0.70*yhat": {
+        "CE": 0.6987763433796619,
+        "OCR": 0.09120707397949461,
+        "WOCR": 0.036223175630642104,
+        "mean_shortfall_Wh": 160.1065944753989,
+        "mean_withheld_Wh": 173.7809248473268
+      }
+    },
+    "lower_bound_violation_active": 0.0,
+    "alpha_u_sensitivity": [
+      {
+        "CE": 0.9459816874119034,
+        "OCR": 0.21402345288460317,
+        "WOCR": 0.07911410152682069,
+        "mean_shortfall_Wh": 201.73826952388805,
+        "mean_withheld_Wh": 31.164060703516494,
+        "alpha_u": 0.1,
+        "beta_min": 0.9
+      },
+      {
+        "CE": 0.9198465715609536,
+        "OCR": 0.202843312878759,
+        "WOCR": 0.07238250283486876,
+        "mean_shortfall_Wh": 189.36570238126538,
+        "mean_withheld_Wh": 46.24184262319661,
+        "alpha_u": 0.15,
+        "beta_min": 0.85
+      },
+      {
+        "CE": 0.8937114557100039,
+        "OCR": 0.19306069037364537,
+        "WOCR": 0.06634666318203108,
+        "mean_shortfall_Wh": 177.18852112274251,
+        "mean_withheld_Wh": 61.31962454287673,
+        "alpha_u": 0.2,
+        "beta_min": 0.8
+      },
+      {
+        "CE": 0.8675763398590544,
+        "OCR": 0.18397682661889697,
+        "WOCR": 0.06088584987991399,
+        "mean_shortfall_Wh": 165.64333910712455,
+        "mean_withheld_Wh": 76.39740646255684,
+        "alpha_u": 0.25,
+        "beta_min": 0.75
+      },
+      {
+        "CE": 0.8414412240081045,
+        "OCR": 0.17541385575078453,
+        "WOCR": 0.056016973395764745,
+        "mean_shortfall_Wh": 155.02172260656022,
+        "mean_withheld_Wh": 91.47518838223695,
+        "alpha_u": 0.3,
+        "beta_min": 0.7
+      },
+      {
+        "CE": 0.8153061081571548,
+        "OCR": 0.16739718717841218,
+        "WOCR": 0.051677334412588705,
+        "mean_shortfall_Wh": 145.2063710727329,
+        "mean_withheld_Wh": 106.55297030191707,
+        "alpha_u": 0.35,
+        "beta_min": 0.65
+      },
+      {
+        "CE": 0.7891709923062052,
+        "OCR": 0.15983788796991527,
+        "WOCR": 0.04777324073759619,
+        "mean_shortfall_Wh": 136.0783742553856,
+        "mean_withheld_Wh": 121.6307522215972,
+        "alpha_u": 0.4,
+        "beta_min": 0.6
+      }
+    ],
+    "alpha_max_sensitivity": [
+      {
+        "alpha_max": 0.05,
+        "cap_active_frac": 1.0,
+        "mean_reserve_active_Wh": 61.66716810407637,
+        "reserve_ratio_active": 0.05000000000000002,
+        "shortfall_covered": 0.567094737987702
+      },
+      {
+        "alpha_max": 0.1,
+        "cap_active_frac": 1.0,
+        "mean_reserve_active_Wh": 123.33433620815273,
+        "reserve_ratio_active": 0.10000000000000003,
+        "shortfall_covered": 0.6301899113021712
+      },
+      {
+        "alpha_max": 0.15,
+        "cap_active_frac": 1.0,
+        "mean_reserve_active_Wh": 185.00150431222906,
+        "reserve_ratio_active": 0.15,
+        "shortfall_covered": 0.68283724220493
+      },
+      {
+        "alpha_max": 0.2,
+        "cap_active_frac": 0.9999727920770528,
+        "mean_reserve_active_Wh": 246.6686615260117,
+        "reserve_ratio_active": 0.19999999117010395,
+        "shortfall_covered": 0.7286553844479512
+      },
+      {
+        "alpha_max": 0.25,
+        "cap_active_frac": 0.9998095445393699,
+        "mean_reserve_active_Wh": 308.332510990954,
+        "reserve_ratio_active": 0.2499973004034966,
+        "shortfall_covered": 0.7703379224030038
+      },
+      {
+        "alpha_max": 0.3,
+        "cap_active_frac": 0.9995374653098983,
+        "mean_reserve_active_Wh": 369.9929082605445,
+        "reserve_ratio_active": 0.2999918105823373,
+        "shortfall_covered": 0.8046471132393753
+      },
+      {
+        "alpha_max": 0.4,
+        "cap_active_frac": 0.9977417423953855,
+        "mean_reserve_active_Wh": 493.2909053656169,
+        "reserve_ratio_active": 0.39996234668428793,
+        "shortfall_covered": 0.8633346030364042
+      },
+      {
+        "alpha_max": 0.5,
+        "cap_active_frac": 0.9883550089786146,
+        "mean_reserve_active_Wh": 616.3481992535209,
+        "reserve_ratio_active": 0.4997377196025147,
+        "shortfall_covered": 0.904908309299668
+      },
+      {
+        "alpha_max": 1.0,
+        "cap_active_frac": 0.24663982151602545,
+        "mean_reserve_active_Wh": 828.8829184580227,
+        "reserve_ratio_active": 0.6720617663674031,
+        "shortfall_covered": 0.9800293845567829
+      }
+    ],
+    "batch_regime_counts": {
+      "renewable_low_activity": 533,
+      "active_deficit": 258,
+      "uncertain_active_production": 183,
+      "balanced_operation": 16,
+      "active_surplus": 10
+    },
+    "batch_action_counts": {
+      "renewable_idle_monitoring": 533,
+      "battery_activation": 194,
+      "hold_and_review": 183,
+      "controlled_load_adjustment": 64,
+      "normal_operation": 16,
+      "energy_storage": 10
+    },
+    "batch_unc_counts": {
+      "Low": 478,
+      "High": 331,
+      "Moderate": 191
+    },
+    "batch_active": {
+      "n": 467,
+      "mean_pred": 1252.1781857006897,
+      "mean_commit": 1059.2311552144008,
+      "reserve_ratio": 0.25
+    },
+    "batch_by_regime": {
+      "active_deficit": {
+        "n": 258,
+        "mean_pred": 366.47871511627903,
+        "mean_commit": 336.1447713861224
+      },
+      "active_surplus": {
+        "n": 10,
+        "mean_pred": 1303.5673888888891,
+        "mean_commit": 1139.3867322970739
+      },
+      "balanced_operation": {
+        "n": 16,
+        "mean_pred": 1084.9598611111112,
+        "mean_commit": 953.7809626092965
+      },
+      "renewable_low_activity": {
+        "n": 533,
+        "mean_pred": 1.964527725661872,
+        "mean_commit": 0.0
+      },
+      "uncertain_active_production": {
+        "n": 183,
+        "mean_pred": 2512.681270795386,
+        "mean_commit": 2083.5040204523834
+      }
+    },
+    "full_test_regime_counts": {
+      "renewable_low_activity": 41957,
+      "active_deficit": 20336,
+      "uncertain_active_production": 14454,
+      "balanced_operation": 1206,
+      "active_surplus": 758
+    },
+    "full_test_action_counts": {
+      "renewable_idle_monitoring": 41957,
+      "battery_activation": 15304,
+      "hold_and_review": 14454,
+      "controlled_load_adjustment": 5032,
+      "normal_operation": 1206,
+      "energy_storage": 758
+    },
+    "reserve_cap_active_frac": 0.9998095445393699,
+    "reserve_ratio_active_full": 0.2499973004034966
+  }
+}

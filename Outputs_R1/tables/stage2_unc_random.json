@@ -1,0 +1,196 @@
+{
+  "random_mc_dropout_point": {
+    "R2": 0.9203891446117751,
+    "RMSE": 294.856814985696,
+    "MAE": 132.18207756499237
+  },
+  "random_uncertainty_baselines": [
+    {
+      "method": "Regime-conditional CQR (RCCRI)",
+      "coverage": 0.9541614259760389,
+      "median_width": 32.37847224101292,
+      "mean_width": 795.9280272840247,
+      "worst_regime_cov": 0.8955031695721077,
+      "regime_spread": 0.08926766071051051,
+      "by_regime": {
+        "low_gen": 0.9847708302826182,
+        "ramp": 0.9110506894542629,
+        "stable": 0.9135438463001712,
+        "high_vol": 0.8955031695721077
+      },
+      "train_s": 55.251526832580566,
+      "note": "",
+      "lower_violation_active": 0.0
+    },
+    {
+      "method": "Global CQR (single eta)",
+      "coverage": 0.9502356722694414,
+      "median_width": 32.37847224101292,
+      "mean_width": 776.732936018604,
+      "worst_regime_cov": 0.8797543581616482,
+      "regime_spread": 0.1050164721209701,
+      "by_regime": {
+        "low_gen": 0.9847708302826182,
+        "ramp": 0.9110506894542629,
+        "stable": 0.8992771542704965,
+        "high_vol": 0.8797543581616482
+      },
+      "train_s": 55.251526832580566,
+      "note": "",
+      "lower_violation_active": 0.0
+    },
+    {
+      "method": "Direct quantile regression, GBR q05/q95",
+      "coverage": 0.9751877120097572,
+      "median_width": 42.783989714002864,
+      "mean_width": 868.1500239861144,
+      "worst_regime_cov": 0.9354199683042789,
+      "regime_spread": 0.0566516589994468,
+      "by_regime": {
+        "low_gen": 0.9920716273037257,
+        "ramp": 0.9559137696640124,
+        "stable": 0.9554879208674149,
+        "high_vol": 0.9354199683042789
+      },
+      "train_s": 51.94410705566406,
+      "note": "no finite-sample guarantee",
+      "lower_violation_active": 0.0
+    },
+    {
+      "method": "Direct quantile regression, LightGBM q05/q95",
+      "coverage": 0.9426255542427361,
+      "median_width": 36.71364549294192,
+      "mean_width": 558.3768142731196,
+      "worst_regime_cov": 0.8838609438725966,
+      "regime_spread": 0.09017834236466882,
+      "by_regime": {
+        "low_gen": 0.9740392862372654,
+        "ramp": 0.8838609438725966,
+        "stable": 0.8969944835457485,
+        "high_vol": 0.9013470681458003
+      },
+      "train_s": 6.047688961029053,
+      "note": "no finite-sample guarantee",
+      "lower_violation_active": 0.04864776622952604
+    },
+    {
+      "method": "LightGBM q05/q95 + global conformal",
+      "coverage": 0.9426255542427361,
+      "median_width": 36.71364549294192,
+      "mean_width": 558.3768142731196,
+      "worst_regime_cov": 0.8838609438725966,
+      "regime_spread": 0.09017834236466882,
+      "by_regime": {
+        "low_gen": 0.9740392862372654,
+        "ramp": 0.8838609438725966,
+        "stable": 0.8969944835457485,
+        "high_vol": 0.9013470681458003
+      },
+      "train_s": 6.047688961029053,
+      "note": "",
+      "lower_violation_active": 0.04864776622952604
+    },
+    {
+      "method": "ExtraTrees spread, Gaussian +-1.645 sigma",
+      "coverage": 0.9553302587948317,
+      "median_width": 41.740732772959134,
+      "mean_width": 453.7017457774441,
+      "worst_regime_cov": 0.9031767167586076,
+      "regime_spread": 0.08159411352401069,
+      "by_regime": {
+        "low_gen": 0.9847708302826182,
+        "ramp": 0.9223150126238104,
+        "stable": 0.9031767167586076,
+        "high_vol": 0.9039223454833597
+      },
+      "train_s": 44.33891844749451,
+      "note": "uncalibrated",
+      "lower_violation_active": 0.04238994395167873
+    },
+    {
+      "method": "ExtraTrees spread + split conformal (symmetric)",
+      "coverage": 0.9029360572219893,
+      "median_width": 29.33797310988821,
+      "mean_width": 318.88969678440924,
+      "worst_regime_cov": 0.7830511698687465,
+      "regime_spread": 0.183457208266517,
+      "by_regime": {
+        "low_gen": 0.9665083781352635,
+        "ramp": 0.8243348222955914,
+        "stable": 0.7830511698687465,
+        "high_vol": 0.8069532488114105
+      },
+      "train_s": 44.33891844749451,
+      "note": "",
+      "lower_violation_active": 0.09775806714915383
+    },
+    {
+      "method": "MC-dropout MLP (T=50), Gaussian +-1.645 sigma",
+      "coverage": 0.7423231822743962,
+      "median_width": 142.61951111276815,
+      "mean_width": 226.13464467642464,
+      "worst_regime_cov": 0.3482975080844588,
+      "regime_spread": 0.5899281262899528,
+      "by_regime": {
+        "low_gen": 0.9382256343744116,
+        "ramp": 0.4471742085841911,
+        "stable": 0.3482975080844588,
+        "high_vol": 0.526148969889065
+      },
+      "train_s": 9.409230470657349,
+      "note": "uncalibrated",
+      "lower_violation_active": 0.2734668335419274
+    },
+    {
+      "method": "MC-dropout MLP + split conformal",
+      "coverage": 0.9008143715617893,
+      "median_width": 340.5790226463851,
+      "mean_width": 540.015282715017,
+      "worst_regime_cov": 0.667015408027392,
+      "regime_spread": 0.32608125954577283,
+      "by_regime": {
+        "low_gen": 0.9930966675731648,
+        "ramp": 0.8014177510196154,
+        "stable": 0.667015408027392,
+        "high_vol": 0.8087361331220285
+      },
+      "train_s": 9.409230470657349,
+      "note": "",
+      "lower_violation_active": 0.10126788920933776
+    },
+    {
+      "method": "Deep ensemble (5 MLPs), Gaussian +-1.645 sigma",
+      "coverage": 0.6952014330906735,
+      "median_width": 96.84356150896289,
+      "mean_width": 145.5665430491312,
+      "worst_regime_cov": 0.2901845158835838,
+      "regime_spread": 0.6336068779619908,
+      "by_regime": {
+        "low_gen": 0.9237913938455745,
+        "ramp": 0.40765197125655467,
+        "stable": 0.2901845158835838,
+        "high_vol": 0.3279516640253566
+      },
+      "train_s": 27.588269472122192,
+      "note": "uncalibrated",
+      "lower_violation_active": 0.29093432007400555
+    },
+    {
+      "method": "Deep ensemble + split conformal",
+      "coverage": 0.901830747925957,
+      "median_width": 337.6499264118536,
+      "mean_width": 507.52503546793946,
+      "worst_regime_cov": 0.7130492676431425,
+      "regime_spread": 0.2805703796593281,
+      "by_regime": {
+        "low_gen": 0.9936196473024705,
+        "ramp": 0.8527869489221208,
+        "stable": 0.7130492676431425,
+        "high_vol": 0.7138470681458003
+      },
+      "train_s": 27.588269472122192,
+      "note": "",
+      "lower_violation_active": 0.09362246286118518
+    }
+  ]
+}

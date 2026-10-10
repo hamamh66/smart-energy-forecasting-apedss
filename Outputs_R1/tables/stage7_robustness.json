@@ -1,0 +1,1829 @@
+{
+  "seasonal": [
+    {
+      "window": "winter",
+      "start": "2020-12-12",
+      "policy": "Naive",
+      "adequacy": 0.6956521739130435,
+      "adequacy_ci": [
+        0.5957287279058278,
+        0.7843934681642615
+      ],
+      "util_kWh": 348.96136936063834,
+      "util_ci": [
+        278.72527495645636,
+        420.83705901112126
+      ],
+      "shed_kWh": 86.52375140730105,
+      "curtail_kWh": 342.5206306393617,
+      "cost": 571.2755690190953,
+      "total_actual_kWh": 691.482,
+      "mean_active_gen_Wh": 435.7164461247637
+    },
+    {
+      "window": "winter",
+      "start": "2020-12-12",
+      "policy": "Fixed-margin (0.80)",
+      "adequacy": 0.7555135475740391,
+      "adequacy_ci": [
+        0.6576752340925639,
+        0.8356835573020881
+      ],
+      "util_kWh": 319.3148106593067,
+      "util_ci": [
+        255.45079355093299,
+        381.9687010341871
+      ],
+      "shed_kWh": 59.38246607027666,
+      "curtail_kWh": 372.1671893406933,
+      "cost": 526.8334283761628,
+      "total_actual_kWh": 691.482,
+      "mean_active_gen_Wh": 435.7164461247637
+    },
+    {
+      "window": "winter",
+      "start": "2020-12-12",
+      "policy": "Deterministic (1.28 sigma)",
+      "adequacy": 0.9918084436042848,
+      "adequacy_ci": [
+        0.9784688616440058,
+        1.0
+      ],
+      "util_kWh": 125.36780922260918,
+      "util_ci": [
+        80.58361570115272,
+        177.90278026871607
+      ],
+      "shed_kWh": 2.93360883401269,
+      "curtail_kWh": 566.1141907773908,
+      "cost": 454.140337596868,
+      "total_actual_kWh": 691.482,
+      "mean_active_gen_Wh": 435.7164461247637
+    },
+    {
+      "window": "winter",
+      "start": "2020-12-12",
+      "policy": "RCCRI",
+      "adequacy": 0.720226843100189,
+      "adequacy_ci": [
+        0.6257819916337196,
+        0.8012585540416411
+      ],
+      "util_kWh": 335.34120830186805,
+      "util_ci": [
+        270.3932122376445,
+        402.834038291611
+      ],
+      "shed_kWh": 74.2939293675834,
+      "curtail_kWh": 356.1407916981319,
+      "cost": 551.2904758337942,
+      "total_actual_kWh": 691.482,
+      "mean_active_gen_Wh": 435.7164461247637
+    },
+    {
+      "window": "winter",
+      "start": "2020-12-12",
+      "policy": "Lower-bound policy",
+      "adequacy": 0.9363579080025205,
+      "adequacy_ci": [
+        0.8915420934991535,
+        0.9738364249079042
+      ],
+      "util_kWh": 183.9994076395097,
+      "util_ci": [
+        139.30330214086436,
+        230.14149057195934
+      ],
+      "shed_kWh": 10.714461681371207,
+      "curtail_kWh": 507.4825923604903,
+      "cost": 459.36627370325203,
+      "total_actual_kWh": 691.482,
+      "mean_active_gen_Wh": 435.7164461247637
+    },
+    {
+      "window": "winter",
+      "start": "2020-12-12",
+      "policy": "Lower-bound floored 0.70",
+      "adequacy": 0.8071833648393194,
+      "adequacy_ci": [
+        0.7250674808918357,
+        0.8807777592692948
+      ],
+      "util_kWh": 296.8422558419626,
+      "util_ci": [
+        237.53097332857433,
+        357.70533574641644
+      ],
+      "shed_kWh": 46.43689677045295,
+      "curtail_kWh": 394.6397441580374,
+      "cost": 506.8616958702646,
+      "total_actual_kWh": 691.482,
+      "mean_active_gen_Wh": 435.7164461247637
+    },
+    {
+      "window": "winter",
+      "start": "2020-12-12",
+      "policy": "Deterministic LP dispatch (point forecast)",
+      "adequacy": 0.6956521739130435,
+      "adequacy_ci": [
+        0.5994711168096346,
+        0.7844728392462365
+      ],
+      "util_kWh": 348.96136936063834,
+      "util_ci": [
+        279.8840668845516,
+        419.17304119687327
+      ],
+      "shed_kWh": 86.52375140730105,
+      "curtail_kWh": 342.5206306393617,
+      "cost": 571.2755690190953,
+      "total_actual_kWh": 691.482,
+      "mean_active_gen_Wh": 435.7164461247637
+    },
+    {
+      "window": "winter",
+      "start": "2020-12-12",
+      "policy": "Stochastic LP dispatch (interval scenarios)",
+      "adequacy": 0.9363579080025205,
+      "adequacy_ci": [
+        0.8905826940839682,
+        0.9724467143053857
+      ],
+      "util_kWh": 183.9994076395097,
+      "util_ci": [
+        141.2894675477506,
+        229.75239276359008
+      ],
+      "shed_kWh": 10.714461681371207,
+      "curtail_kWh": 507.4825923604903,
+      "cost": 459.36627370325203,
+      "total_actual_kWh": 691.482,
+      "mean_active_gen_Wh": 435.7164461247637
+    },
+    {
+      "window": "spring",
+      "start": "2021-03-15",
+      "policy": "Naive",
+      "adequacy": 0.9344159900062461,
+      "adequacy_ci": [
+        0.9004129374476293,
+        0.9654593059213071
+      ],
+      "util_kWh": 2684.1199153284806,
+      "util_ci": [
+        2478.1203425552644,
+        2885.2503035553873
+      ],
+      "shed_kWh": 54.55541337562123,
+      "curtail_kWh": 1274.7640846715187,
+      "cost": 924.3196362153046,
+      "total_actual_kWh": 3958.884,
+      "mean_active_gen_Wh": 1236.3785134291068
+    },
+    {
+      "window": "spring",
+      "start": "2021-03-15",
+      "policy": "Fixed-margin (0.80)",
+      "adequacy": 0.9946908182386008,
+      "adequacy_ci": [
+        0.9878009680735577,
+        0.9996897564486545
+      ],
+      "util_kWh": 2483.841705734768,
+      "util_ci": [
+        2289.106408711945,
+        2663.4342920829777
+      ],
+      "shed_kWh": 11.235410820972724,
+      "curtail_kWh": 1475.0422942652315,
+      "cost": 875.6818606450341,
+      "total_actual_kWh": 3958.884,
+      "mean_active_gen_Wh": 1236.3785134291068
+    },
+    {
+      "window": "spring",
+      "start": "2021-03-15",
+      "policy": "Deterministic (1.28 sigma)",
+      "adequacy": 0.9990630855715178,
+      "adequacy_ci": [
+        0.9974707356145727,
+        1.0
+      ],
+      "util_kWh": 1951.1106794901477,
+      "util_ci": [
+        1720.2688925626298,
+        2178.2954073166875
+      ],
+      "shed_kWh": 2.9741979700566,
+      "curtail_kWh": 2007.7733205098523,
+      "cost": 939.9672333933589,
+      "total_actual_kWh": 3958.884,
+      "mean_active_gen_Wh": 1236.3785134291068
+    },
+    {
+      "window": "spring",
+      "start": "2021-03-15",
+      "policy": "RCCRI",
+      "adequacy": 0.9775140537164272,
+      "adequacy_ci": [
+        0.960310996648265,
+        0.991835404398652
+      ],
+      "util_kWh": 2566.8959398746724,
+      "util_ci": [
+        2363.129611876499,
+        2759.5699858117673
+      ],
+      "shed_kWh": 20.80237792963357,
+      "curtail_kWh": 1391.9880601253276,
+      "cost": 880.7375738857673,
+      "total_actual_kWh": 3958.884,
+      "mean_active_gen_Wh": 1236.3785134291068
+    },
+    {
+      "window": "spring",
+      "start": "2021-03-15",
+      "policy": "Lower-bound policy",
+      "adequacy": 0.9996876951905059,
+      "adequacy_ci": [
+        0.9990463777874807,
+        1.0
+      ],
+      "util_kWh": 2052.731198725065,
+      "util_ci": [
+        1820.1534133069902,
+        2275.6402902432005
+      ],
+      "shed_kWh": 2.359518192734334,
+      "curtail_kWh": 1906.1528012749347,
+      "cost": 923.4836136331468,
+      "total_actual_kWh": 3958.884,
+      "mean_active_gen_Wh": 1236.3785134291068
+    },
+    {
+      "window": "spring",
+      "start": "2021-03-15",
+      "policy": "Lower-bound floored 0.70",
+      "adequacy": 0.9981261711430356,
+      "adequacy_ci": [
+        0.9950155374923915,
+        1.0
+      ],
+      "util_kWh": 2344.900481114721,
+      "util_ci": [
+        2151.235036569191,
+        2545.1440631621153
+      ],
+      "shed_kWh": 5.8813626061697555,
+      "curtail_kWh": 1613.9835188852794,
+      "cost": 886.5199399967364,
+      "total_actual_kWh": 3958.884,
+      "mean_active_gen_Wh": 1236.3785134291068
+    },
+    {
+      "window": "spring",
+      "start": "2021-03-15",
+      "policy": "Deterministic LP dispatch (point forecast)",
+      "adequacy": 0.9344159900062461,
+      "adequacy_ci": [
+        0.8958852390831421,
+        0.9657748538357613
+      ],
+      "util_kWh": 2684.1199153284806,
+      "util_ci": [
+        2469.333387982377,
+        2881.017878845018
+      ],
+      "shed_kWh": 54.55541337562123,
+      "curtail_kWh": 1274.7640846715187,
+      "cost": 924.3196362153046,
+      "total_actual_kWh": 3958.884,
+      "mean_active_gen_Wh": 1236.3785134291068
+    },
+    {
+      "window": "spring",
+      "start": "2021-03-15",
+      "policy": "Stochastic LP dispatch (interval scenarios)",
+      "adequacy": 0.9996876951905059,
+      "adequacy_ci": [
+        0.9990506329113924,
+        1.0
+      ],
+      "util_kWh": 2052.6273746954253,
+      "util_ci": [
+        1815.3756506754082,
+        2270.4329165789986
+      ],
+      "shed_kWh": 2.359518192734334,
+      "curtail_kWh": 1906.2566253045745,
+      "cost": 923.4985433672449,
+      "total_actual_kWh": 3958.884,
+      "mean_active_gen_Wh": 1236.3785134291068
+    },
+    {
+      "window": "summer",
+      "start": "2021-06-15",
+      "policy": "Naive",
+      "adequacy": 0.9445178335535007,
+      "adequacy_ci": [
+        0.9160974611002912,
+        0.9694583672321428
+      ],
+      "util_kWh": 3154.6043625638263,
+      "util_ci": [
+        2971.303013683107,
+        3314.1851977796423
+      ],
+      "shed_kWh": 72.33444932635155,
+      "curtail_kWh": 1505.435637436174,
+      "cost": 843.9499057416997,
+      "total_actual_kWh": 4660.04,
+      "mean_active_gen_Wh": 1231.1862615587847
+    },
+    {
+      "window": "summer",
+      "start": "2021-06-15",
+      "policy": "Fixed-margin (0.80)",
+      "adequacy": 0.9846763540290621,
+      "adequacy_ci": [
+        0.9707432612012648,
+        0.9950094225868529
+      ],
+      "util_kWh": 2940.8212237642447,
+      "util_ci": [
+        2758.8289231798035,
+        3103.280740855458
+      ],
+      "shed_kWh": 24.57132269188274,
+      "curtail_kWh": 1719.2187762357555,
+      "cost": 789.5886542520257,
+      "total_actual_kWh": 4660.04,
+      "mean_active_gen_Wh": 1231.1862615587847
+    },
+    {
+      "window": "summer",
+      "start": "2021-06-15",
+      "policy": "Deterministic (1.28 sigma)",
+      "adequacy": 0.9994715984147953,
+      "adequacy_ci": [
+        0.9983939720164675,
+        1.0
+      ],
+      "util_kWh": 2366.4939789217256,
+      "util_ci": [
+        2164.6747483270888,
+        2555.7910739349622
+      ],
+      "shed_kWh": 12.821552847437275,
+      "curtail_kWh": 2293.5460210782744,
+      "cost": 854.3421799262295,
+      "total_actual_kWh": 4660.04,
+      "mean_active_gen_Wh": 1231.1862615587847
+    },
+    {
+      "window": "summer",
+      "start": "2021-06-15",
+      "policy": "RCCRI",
+      "adequacy": 0.9727873183619551,
+      "adequacy_ci": [
+        0.9511203877269139,
+        0.9883763123131475
+      ],
+      "util_kWh": 3042.0564522687737,
+      "util_ci": [
+        2860.8009202276085,
+        3201.66273128262
+      ],
+      "shed_kWh": 35.33997153817451,
+      "curtail_kWh": 1617.9835477312267,
+      "cost": 793.9054649043135,
+      "total_actual_kWh": 4660.04,
+      "mean_active_gen_Wh": 1231.1862615587847
+    },
+    {
+      "window": "summer",
+      "start": "2021-06-15",
+      "policy": "Lower-bound policy",
+      "adequacy": 1.0,
+      "adequacy_ci": [
+        1.0,
+        1.0
+      ],
+      "util_kWh": 2461.336955233773,
+      "util_ci": [
+        2249.682986529598,
+        2665.2136356656474
+      ],
+      "shed_kWh": 10.636777901726902,
+      "curtail_kWh": 2198.703044766227,
+      "cost": 835.9805534080255,
+      "total_actual_kWh": 4660.04,
+      "mean_active_gen_Wh": 1231.1862615587847
+    },
+    {
+      "window": "summer",
+      "start": "2021-06-15",
+      "policy": "Lower-bound floored 0.70",
+      "adequacy": 0.9941875825627476,
+      "adequacy_ci": [
+        0.9885266009964673,
+        0.9984330316815189
+      ],
+      "util_kWh": 2811.9614323850096,
+      "util_ci": [
+        2643.85850375433,
+        2976.0344213940584
+      ],
+      "shed_kWh": 15.638032304386808,
+      "curtail_kWh": 1848.0785676149908,
+      "cost": 792.8138960078696,
+      "total_actual_kWh": 4660.04,
+      "mean_active_gen_Wh": 1231.1862615587847
+    },
+    {
+      "window": "summer",
+      "start": "2021-06-15",
+      "policy": "Deterministic LP dispatch (point forecast)",
+      "adequacy": 0.9445178335535007,
+      "adequacy_ci": [
+        0.9168646080760094,
+        0.9686021776754764
+      ],
+      "util_kWh": 3154.6043625638263,
+      "util_ci": [
+        2967.238942655645,
+        3311.069857753114
+      ],
+      "shed_kWh": 72.33444932635155,
+      "curtail_kWh": 1505.435637436174,
+      "cost": 843.9499057416997,
+      "total_actual_kWh": 4660.04,
+      "mean_active_gen_Wh": 1231.1862615587847
+    },
+    {
+      "window": "summer",
+      "start": "2021-06-15",
+      "policy": "Stochastic LP dispatch (interval scenarios)",
+      "adequacy": 1.0,
+      "adequacy_ci": [
+        1.0,
+        1.0
+      ],
+      "util_kWh": 2460.9801932688897,
+      "util_ci": [
+        2245.33974077207,
+        2665.3105112579337
+      ],
+      "shed_kWh": 10.636777901726902,
+      "curtail_kWh": 2199.0598067311103,
+      "cost": 836.0331003349222,
+      "total_actual_kWh": 4660.04,
+      "mean_active_gen_Wh": 1231.1862615587847
+    },
+    {
+      "window": "autumn",
+      "start": "2021-09-15",
+      "policy": "Naive",
+      "adequacy": 0.9221116399826915,
+      "adequacy_ci": [
+        0.8820430772796602,
+        0.95821490638874
+      ],
+      "util_kWh": 1310.175952489174,
+      "util_ci": [
+        1129.3096152319933,
+        1497.9115272436345
+      ],
+      "shed_kWh": 34.13370270454249,
+      "curtail_kWh": 844.107047510826,
+      "cost": 832.1649707798945,
+      "total_actual_kWh": 2154.283,
+      "mean_active_gen_Wh": 932.1864993509304
+    },
+    {
+      "window": "autumn",
+      "start": "2021-09-15",
+      "policy": "Fixed-margin (0.80)",
+      "adequacy": 0.9883167459974037,
+      "adequacy_ci": [
+        0.9775803008872316,
+        0.9964930727729918
+      ],
+      "util_kWh": 1200.6031602929306,
+      "util_ci": [
+        1019.0995399535523,
+        1370.2519592961353
+      ],
+      "shed_kWh": 6.471660981286605,
+      "curtail_kWh": 953.6798397070693,
+      "cost": 798.5433232228124,
+      "total_actual_kWh": 2154.283,
+      "mean_active_gen_Wh": 932.1864993509304
+    },
+    {
+      "window": "autumn",
+      "start": "2021-09-15",
+      "policy": "Deterministic (1.28 sigma)",
+      "adequacy": 1.0,
+      "adequacy_ci": [
+        1.0,
+        1.0
+      ],
+      "util_kWh": 801.1903864805776,
+      "util_ci": [
+        612.1084775961587,
+        973.7204782212233
+      ],
+      "shed_kWh": 0.0,
+      "curtail_kWh": 1353.0926135194222,
+      "cost": 846.4414745758075,
+      "total_actual_kWh": 2154.283,
+      "mean_active_gen_Wh": 932.1864993509304
+    },
+    {
+      "window": "autumn",
+      "start": "2021-09-15",
+      "policy": "RCCRI",
+      "adequacy": 0.9623539593249676,
+      "adequacy_ci": [
+        0.9351842864760257,
+        0.982684784351451
+      ],
+      "util_kWh": 1251.758172823857,
+      "util_ci": [
+        1081.3248211230189,
+        1419.2527223679392
+      ],
+      "shed_kWh": 15.315138027042183,
+      "curtail_kWh": 902.524827176143,
+      "cost": 806.9231712194775,
+      "total_actual_kWh": 2154.283,
+      "mean_active_gen_Wh": 932.1864993509304
+    },
+    {
+      "window": "autumn",
+      "start": "2021-09-15",
+      "policy": "Lower-bound policy",
+      "adequacy": 1.0,
+      "adequacy_ci": [
+        1.0,
+        1.0
+      ],
+      "util_kWh": 857.1953026507688,
+      "util_ci": [
+        697.8244031428992,
+        1012.787677259104
+      ],
+      "shed_kWh": 0.0,
+      "curtail_kWh": 1297.0876973492311,
+      "cost": 838.018369465506,
+      "total_actual_kWh": 2154.283,
+      "mean_active_gen_Wh": 932.1864993509304
+    },
+    {
+      "window": "autumn",
+      "start": "2021-09-15",
+      "policy": "Lower-bound floored 0.70",
+      "adequacy": 0.9995672868887927,
+      "adequacy_ci": [
+        0.9986369366806965,
+        1.0
+      ],
+      "util_kWh": 1123.0422720322003,
+      "util_ci": [
+        948.4083703484677,
+        1292.7451113505003
+      ],
+      "shed_kWh": 1.5304887089912054,
+      "curtail_kWh": 1031.2407279677996,
+      "cost": 801.1733622993622,
+      "total_actual_kWh": 2154.283,
+      "mean_active_gen_Wh": 932.1864993509304
+    },
+    {
+      "window": "autumn",
+      "start": "2021-09-15",
+      "policy": "Deterministic LP dispatch (point forecast)",
+      "adequacy": 0.9221116399826915,
+      "adequacy_ci": [
+        0.8836239795868135,
+        0.9579281647114115
+      ],
+      "util_kWh": 1310.175952489174,
+      "util_ci": [
+        1124.4373864970935,
+        1495.5875815469328
+      ],
+      "shed_kWh": 34.13370270454249,
+      "curtail_kWh": 844.107047510826,
+      "cost": 832.1649707798945,
+      "total_actual_kWh": 2154.283,
+      "mean_active_gen_Wh": 932.1864993509304
+    },
+    {
+      "window": "autumn",
+      "start": "2021-09-15",
+      "policy": "Stochastic LP dispatch (interval scenarios)",
+      "adequacy": 1.0,
+      "adequacy_ci": [
+        1.0,
+        1.0
+      ],
+      "util_kWh": 857.2431434095644,
+      "util_ci": [
+        713.8035152861137,
+        1007.498573644719
+      ],
+      "shed_kWh": 0.0,
+      "curtail_kWh": 1297.0398565904356,
+      "cost": 838.0111933516868,
+      "total_actual_kWh": 2154.283,
+      "mean_active_gen_Wh": 932.1864993509304
+    },
+    {
+      "window": "winter_2",
+      "start": "2021-12-12",
+      "policy": "Naive",
+      "adequacy": 0.7065217391304348,
+      "adequacy_ci": [
+        0.6181177252877449,
+        0.7899341225079334
+      ],
+      "util_kWh": 310.44938291315685,
+      "util_ci": [
+        249.12720842345604,
+        376.18402681726013
+      ],
+      "shed_kWh": 59.90353045322049,
+      "curtail_kWh": 287.3406170868431,
+      "cost": 499.40032824505226,
+      "total_actual_kWh": 597.79,
+      "mean_active_gen_Wh": 406.10733695652175
+    },
+    {
+      "window": "winter_2",
+      "start": "2021-12-12",
+      "policy": "Fixed-margin (0.80)",
+      "adequacy": 0.8355978260869565,
+      "adequacy_ci": [
+        0.7597356298129813,
+        0.9015416919167756
+      ],
+      "util_kWh": 294.4115236054259,
+      "util_ci": [
+        235.49784186547222,
+        355.4823835549678
+      ],
+      "shed_kWh": 34.617637434686024,
+      "curtail_kWh": 303.3784763945741,
+      "cost": 456.27095181375034,
+      "total_actual_kWh": 597.79,
+      "mean_active_gen_Wh": 406.10733695652175
+    },
+    {
+      "window": "winter_2",
+      "start": "2021-12-12",
+      "policy": "Deterministic (1.28 sigma)",
+      "adequacy": 0.9769021739130435,
+      "adequacy_ci": [
+        0.9425673922192088,
+        1.0
+      ],
+      "util_kWh": 129.14061327554606,
+      "util_ci": [
+        80.81313923256316,
+        180.45773347679201
+      ],
+      "shed_kWh": 8.016172971645716,
+      "curtail_kWh": 468.6493867244539,
+      "cost": 433.3164874815426,
+      "total_actual_kWh": 597.79,
+      "mean_active_gen_Wh": 406.10733695652175
+    },
+    {
+      "window": "winter_2",
+      "start": "2021-12-12",
+      "policy": "RCCRI",
+      "adequacy": 0.7778532608695652,
+      "adequacy_ci": [
+        0.6941624432314546,
+        0.8504626838664432
+      ],
+      "util_kWh": 304.3070560927741,
+      "util_ci": [
+        240.71180671147647,
+        368.58170971034446
+      ],
+      "shed_kWh": 48.010392383418754,
+      "curtail_kWh": 293.4829439072259,
+      "cost": 478.91482501042736,
+      "total_actual_kWh": 597.79,
+      "mean_active_gen_Wh": 406.10733695652175
+    },
+    {
+      "window": "winter_2",
+      "start": "2021-12-12",
+      "policy": "Lower-bound policy",
+      "adequacy": 0.9789402173913043,
+      "adequacy_ci": [
+        0.9447705383333069,
+        1.0
+      ],
+      "util_kWh": 185.7278050810413,
+      "util_ci": [
+        142.35112056757086,
+        235.98749214335737
+      ],
+      "shed_kWh": 6.243308131476515,
+      "curtail_kWh": 412.0621949189587,
+      "cost": 421.64836077632094,
+      "total_actual_kWh": 597.79,
+      "mean_active_gen_Wh": 406.10733695652175
+    },
+    {
+      "window": "winter_2",
+      "start": "2021-12-12",
+      "policy": "Lower-bound floored 0.70",
+      "adequacy": 0.9021739130434783,
+      "adequacy_ci": [
+        0.8432206062853584,
+        0.9528969437616813
+      ],
+      "util_kWh": 279.30244618477815,
+      "util_ci": [
+        223.60169248172687,
+        343.0449694471356
+      ],
+      "shed_kWh": 22.56825151908056,
+      "curtail_kWh": 318.4875538152219,
+      "cost": 436.82068070684426,
+      "total_actual_kWh": 597.79,
+      "mean_active_gen_Wh": 406.10733695652175
+    },
+    {
+      "window": "winter_2",
+      "start": "2021-12-12",
+      "policy": "Deterministic LP dispatch (point forecast)",
+      "adequacy": 0.7065217391304348,
+      "adequacy_ci": [
+        0.6127522554605888,
+        0.792631032733921
+      ],
+      "util_kWh": 310.44938291315685,
+      "util_ci": [
+        248.39420073557602,
+        376.3194319112067
+      ],
+      "shed_kWh": 59.90353045322049,
+      "curtail_kWh": 287.3406170868431,
+      "cost": 499.40032824505226,
+      "total_actual_kWh": 597.79,
+      "mean_active_gen_Wh": 406.10733695652175
+    },
+    {
+      "window": "winter_2",
+      "start": "2021-12-12",
+      "policy": "Stochastic LP dispatch (interval scenarios)",
+      "adequacy": 0.9789402173913043,
+      "adequacy_ci": [
+        0.9453321201926052,
+        1.0
+      ],
+      "util_kWh": 185.7238775345508,
+      "util_ci": [
+        138.87284365812866,
+        233.71896279082856
+      ],
+      "shed_kWh": 6.243308131476515,
+      "curtail_kWh": 412.0661224654492,
+      "cost": 421.6489499082945,
+      "total_actual_kWh": 597.79,
+      "mean_active_gen_Wh": 406.10733695652175
+    },
+    {
+      "window": "summer_2",
+      "start": "2022-06-15",
+      "policy": "Naive",
+      "adequacy": 0.9568804897524621,
+      "adequacy_ci": [
+        0.9316782660957262,
+        0.9782342780424298
+      ],
+      "util_kWh": 3607.2854832092144,
+      "util_ci": [
+        3447.711086801906,
+        3756.973544220883
+      ],
+      "shed_kWh": 74.37344793854936,
+      "curtail_kWh": 1535.5155167907858,
+      "cost": 915.00275205458,
+      "total_actual_kWh": 5142.801,
+      "mean_active_gen_Wh": 1368.8583976577056
+    },
+    {
+      "window": "summer_2",
+      "start": "2022-06-15",
+      "policy": "Fixed-margin (0.80)",
+      "adequacy": 0.9949427734894863,
+      "adequacy_ci": [
+        0.9885825756466468,
+        0.9994670004993619
+      ],
+      "util_kWh": 3390.0272283863333,
+      "util_ci": [
+        3240.213741143429,
+        3540.670267707631
+      ],
+      "shed_kWh": 33.321355721254804,
+      "curtail_kWh": 1752.7737716136667,
+      "cost": 872.9689838463986,
+      "total_actual_kWh": 5142.801,
+      "mean_active_gen_Wh": 1368.8583976577056
+    },
+    {
+      "window": "summer_2",
+      "start": "2022-06-15",
+      "policy": "Deterministic (1.28 sigma)",
+      "adequacy": 0.9997338301836571,
+      "adequacy_ci": [
+        0.9991898296487144,
+        1.0
+      ],
+      "util_kWh": 2867.0180997927473,
+      "util_ci": [
+        2670.0201937850056,
+        3044.029472879694
+      ],
+      "shed_kWh": 29.08963341557039,
+      "curtail_kWh": 2275.7829002072526,
+      "cost": 943.0729599960436,
+      "total_actual_kWh": 5142.801,
+      "mean_active_gen_Wh": 1368.8583976577056
+    },
+    {
+      "window": "summer_2",
+      "start": "2022-06-15",
+      "policy": "RCCRI",
+      "adequacy": 0.986159169550173,
+      "adequacy_ci": [
+        0.9733012298777302,
+        0.9957379930096916
+      ],
+      "util_kWh": 3503.600241984526,
+      "util_ci": [
+        3337.3192903331737,
+        3656.295658670197
+      ],
+      "shed_kWh": 43.59409069298936,
+      "curtail_kWh": 1639.2007580154745,
+      "cost": 874.7897229546497,
+      "total_actual_kWh": 5142.801,
+      "mean_active_gen_Wh": 1368.8583976577056
+    },
+    {
+      "window": "summer_2",
+      "start": "2022-06-15",
+      "policy": "Lower-bound policy",
+      "adequacy": 1.0,
+      "adequacy_ci": [
+        1.0,
+        1.0
+      ],
+      "util_kWh": 3007.1989939733267,
+      "util_ci": [
+        2794.488465273137,
+        3212.6539250315095
+      ],
+      "shed_kWh": 29.063262499926346,
+      "curtail_kWh": 2135.602006026673,
+      "cost": 921.9134104514495,
+      "total_actual_kWh": 5142.801,
+      "mean_active_gen_Wh": 1368.8583976577056
+    },
+    {
+      "window": "summer_2",
+      "start": "2022-06-15",
+      "policy": "Lower-bound floored 0.70",
+      "adequacy": 0.9989353207346287,
+      "adequacy_ci": [
+        0.9967758835866947,
+        1.0
+      ],
+      "util_kWh": 3281.577950460967,
+      "util_ci": [
+        3116.0941271606853,
+        3440.881562525772
+      ],
+      "shed_kWh": 30.028187165352232,
+      "curtail_kWh": 1861.2230495390338,
+      "cost": 882.9877075176487,
+      "total_actual_kWh": 5142.801,
+      "mean_active_gen_Wh": 1368.8583976577056
+    },
+    {
+      "window": "summer_2",
+      "start": "2022-06-15",
+      "policy": "Deterministic LP dispatch (point forecast)",
+      "adequacy": 0.9568804897524621,
+      "adequacy_ci": [
+        0.9314075967876286,
+        0.9780223947342298
+      ],
+      "util_kWh": 3607.2854832092144,
+      "util_ci": [
+        3441.2663329118113,
+        3759.235205877512
+      ],
+      "shed_kWh": 74.37344793854936,
+      "curtail_kWh": 1535.5155167907858,
+      "cost": 915.00275205458,
+      "total_actual_kWh": 5142.801,
+      "mean_active_gen_Wh": 1368.8583976577056
+    },
+    {
+      "window": "summer_2",
+      "start": "2022-06-15",
+      "policy": "Stochastic LP dispatch (interval scenarios)",
+      "adequacy": 1.0,
+      "adequacy_ci": [
+        1.0,
+        1.0
+      ],
+      "util_kWh": 3006.4398277425466,
+      "util_ci": [
+        2784.495254577927,
+        3212.3978848189217
+      ],
+      "shed_kWh": 29.063262499926346,
+      "curtail_kWh": 2136.3611722574533,
+      "cost": 922.0197971842385,
+      "total_actual_kWh": 5142.801,
+      "mean_active_gen_Wh": 1368.8583976577056
+    }
+  ],
+  "paired_differences": [
+    {
+      "window": "winter",
+      "a": "RCCRI",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": -0.03528670447385007,
+      "d_adequacy_ci": [
+        -0.05340722693112794,
+        -0.018133760018891738
+      ],
+      "d_util_kWh": 16.026397642561236,
+      "d_util_ci": [
+        11.133939990149981,
+        21.162292363713906
+      ]
+    },
+    {
+      "window": "winter",
+      "a": "RCCRI",
+      "b": "Naive",
+      "d_adequacy": 0.02457466918714557,
+      "d_adequacy_ci": [
+        0.014408938998445947,
+        0.03621909516246534
+      ],
+      "d_util_kWh": -13.62016105877026,
+      "d_util_ci": [
+        -18.224115222203043,
+        -9.457302256197215
+      ]
+    },
+    {
+      "window": "winter",
+      "a": "Lower-bound policy",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.1808443604284814,
+      "d_adequacy_ci": [
+        0.11609516601657249,
+        0.2618164378749539
+      ],
+      "d_util_kWh": -135.315403019797,
+      "d_util_ci": [
+        -167.45236899593843,
+        -104.75263534402109
+      ]
+    },
+    {
+      "window": "winter",
+      "a": "Lower-bound floored 0.70",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.051669817265280304,
+      "d_adequacy_ci": [
+        0.027813263329015486,
+        0.07936610409173357
+      ],
+      "d_util_kWh": -22.472554817344236,
+      "d_util_ci": [
+        -28.719807841636868,
+        -16.089440487654958
+      ]
+    },
+    {
+      "window": "winter",
+      "a": "Stochastic LP dispatch (interval scenarios)",
+      "b": "Lower-bound policy",
+      "d_adequacy": 0.0,
+      "d_adequacy_ci": [
+        0.0,
+        0.0
+      ],
+      "d_util_kWh": 0.0,
+      "d_util_ci": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "window": "spring",
+      "a": "RCCRI",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": -0.01717676452217365,
+      "d_adequacy_ci": [
+        -0.030723660661018934,
+        -0.006230481085753703
+      ],
+      "d_util_kWh": 83.05423413990391,
+      "d_util_ci": [
+        71.14234314071494,
+        96.0172555003574
+      ]
+    },
+    {
+      "window": "spring",
+      "a": "RCCRI",
+      "b": "Naive",
+      "d_adequacy": 0.0430980637101811,
+      "d_adequacy_ci": [
+        0.02144849265086825,
+        0.06781486191860459
+      ],
+      "d_util_kWh": -117.22397545380797,
+      "d_util_ci": [
+        -139.4146116375177,
+        -94.17625467536011
+      ]
+    },
+    {
+      "window": "spring",
+      "a": "Lower-bound policy",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.004996876951905094,
+      "d_adequacy_ci": [
+        0.0,
+        0.011511925295901887
+      ],
+      "d_util_kWh": -431.1105070097039,
+      "d_util_ci": [
+        -487.4999199966606,
+        -373.6016271496067
+      ]
+    },
+    {
+      "window": "spring",
+      "a": "Lower-bound floored 0.70",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.003435352904434752,
+      "d_adequacy_ci": [
+        0.0,
+        0.008254033782455539
+      ],
+      "d_util_kWh": -138.94122462004842,
+      "d_util_ci": [
+        -159.8059513671454,
+        -118.34938526346993
+      ]
+    },
+    {
+      "window": "spring",
+      "a": "Stochastic LP dispatch (interval scenarios)",
+      "b": "Lower-bound policy",
+      "d_adequacy": 0.0,
+      "d_adequacy_ci": [
+        0.0,
+        0.0
+      ],
+      "d_util_kWh": -0.10382402963982895,
+      "d_util_ci": [
+        -0.2770457874112763,
+        0.0008166666668839753
+      ]
+    },
+    {
+      "window": "summer",
+      "a": "RCCRI",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": -0.011889035667106973,
+      "d_adequacy_ci": [
+        -0.02135161777561898,
+        -0.004716703662597059
+      ],
+      "d_util_kWh": 101.2352285045283,
+      "d_util_ci": [
+        91.47537841497399,
+        110.88544722372593
+      ]
+    },
+    {
+      "window": "summer",
+      "a": "RCCRI",
+      "b": "Naive",
+      "d_adequacy": 0.02826948480845437,
+      "d_adequacy_ci": [
+        0.01604819731691071,
+        0.041071669666726256
+      ],
+      "d_util_kWh": -112.54791029505292,
+      "d_util_ci": [
+        -136.2866735214061,
+        -90.28437432919215
+      ]
+    },
+    {
+      "window": "summer",
+      "a": "Lower-bound policy",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.015323645970937938,
+      "d_adequacy_ci": [
+        0.004500837357271048,
+        0.03043222129182576
+      ],
+      "d_util_kWh": -479.4842685304717,
+      "d_util_ci": [
+        -549.6767788718857,
+        -411.4033982029738
+      ]
+    },
+    {
+      "window": "summer",
+      "a": "Lower-bound floored 0.70",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.009511228533685578,
+      "d_adequacy_ci": [
+        0.0025992873394003915,
+        0.01861115160527786
+      ],
+      "d_util_kWh": -128.85979137923522,
+      "d_util_ci": [
+        -148.83116113829107,
+        -107.61363680950848
+      ]
+    },
+    {
+      "window": "summer",
+      "a": "Stochastic LP dispatch (interval scenarios)",
+      "b": "Lower-bound policy",
+      "d_adequacy": 0.0,
+      "d_adequacy_ci": [
+        0.0,
+        0.0
+      ],
+      "d_util_kWh": -0.3567619648836553,
+      "d_util_ci": [
+        -0.7887629979351536,
+        -0.023612586167920637
+      ]
+    },
+    {
+      "window": "autumn",
+      "a": "RCCRI",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": -0.025962786672436122,
+      "d_adequacy_ci": [
+        -0.04555420160764507,
+        -0.009571438178624042
+      ],
+      "d_util_kWh": 51.15501253092615,
+      "d_util_ci": [
+        40.12606796369634,
+        62.80821255739964
+      ]
+    },
+    {
+      "window": "autumn",
+      "a": "RCCRI",
+      "b": "Naive",
+      "d_adequacy": 0.04024231934227607,
+      "d_adequacy_ci": [
+        0.021930907725171665,
+        0.06122576583780652
+      ],
+      "d_util_kWh": -58.41777966531738,
+      "d_util_ci": [
+        -71.03665197230848,
+        -46.05586341506951
+      ]
+    },
+    {
+      "window": "autumn",
+      "a": "Lower-bound policy",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.011683254002596288,
+      "d_adequacy_ci": [
+        0.003403930623325749,
+        0.022732435781440494
+      ],
+      "d_util_kWh": -343.4078576421619,
+      "d_util_ci": [
+        -381.44353351996085,
+        -306.0334312433102
+      ]
+    },
+    {
+      "window": "autumn",
+      "a": "Lower-bound floored 0.70",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.011250540891388994,
+      "d_adequacy_ci": [
+        0.0030394148211221965,
+        0.021866216168503556
+      ],
+      "d_util_kWh": -77.56088826073054,
+      "d_util_ci": [
+        -89.56145019150095,
+        -65.4231911536798
+      ]
+    },
+    {
+      "window": "autumn",
+      "a": "Stochastic LP dispatch (interval scenarios)",
+      "b": "Lower-bound policy",
+      "d_adequacy": 0.0,
+      "d_adequacy_ci": [
+        0.0,
+        0.0
+      ],
+      "d_util_kWh": 0.047840758795617146,
+      "d_util_ci": [
+        0.0,
+        0.14352227638708429
+      ]
+    },
+    {
+      "window": "winter_2",
+      "a": "RCCRI",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": -0.05774456521739135,
+      "d_adequacy_ci": [
+        -0.08836524745720664,
+        -0.031220494820738784
+      ],
+      "d_util_kWh": 9.89553248734807,
+      "d_util_ci": [
+        5.241109045240913,
+        15.414660900158
+      ]
+    },
+    {
+      "window": "winter_2",
+      "a": "RCCRI",
+      "b": "Naive",
+      "d_adequacy": 0.07133152173913038,
+      "d_adequacy_ci": [
+        0.04658561557754628,
+        0.09871505968860972
+      ],
+      "d_util_kWh": -6.1423268203828485,
+      "d_util_ci": [
+        -9.22287496954137,
+        -3.4214326659654346
+      ]
+    },
+    {
+      "window": "winter_2",
+      "a": "Lower-bound policy",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.14334239130434778,
+      "d_adequacy_ci": [
+        0.08814319790704837,
+        0.20821625840537947
+      ],
+      "d_util_kWh": -108.68371852438466,
+      "d_util_ci": [
+        -134.1721701231456,
+        -85.12883220998623
+      ]
+    },
+    {
+      "window": "winter_2",
+      "a": "Lower-bound floored 0.70",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.06657608695652173,
+      "d_adequacy_ci": [
+        0.03732169613425227,
+        0.09979370534327431
+      ],
+      "d_util_kWh": -15.109077420647838,
+      "d_util_ci": [
+        -21.12986340490877,
+        -9.71641010955884
+      ]
+    },
+    {
+      "window": "winter_2",
+      "a": "Stochastic LP dispatch (interval scenarios)",
+      "b": "Lower-bound policy",
+      "d_adequacy": 0.0,
+      "d_adequacy_ci": [
+        0.0,
+        0.0
+      ],
+      "d_util_kWh": -0.003927546490507666,
+      "d_util_ci": [
+        -0.01178263947146479,
+        0.0
+      ]
+    },
+    {
+      "window": "summer_2",
+      "a": "RCCRI",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": -0.008783603939313323,
+      "d_adequacy_ci": [
+        -0.017498049168122295,
+        -0.0023916294002447633
+      ],
+      "d_util_kWh": 113.57301359819202,
+      "d_util_ci": [
+        103.58526852418618,
+        124.21828866395775
+      ]
+    },
+    {
+      "window": "summer_2",
+      "a": "RCCRI",
+      "b": "Naive",
+      "d_adequacy": 0.029278679797710927,
+      "d_adequacy_ci": [
+        0.015231396095052571,
+        0.0442995917474666
+      ],
+      "d_util_kWh": -103.68524122468894,
+      "d_util_ci": [
+        -122.05179781203043,
+        -84.95579707582121
+      ]
+    },
+    {
+      "window": "summer_2",
+      "a": "Lower-bound policy",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.005057226510513657,
+      "d_adequacy_ci": [
+        0.0005285098732559612,
+        0.011650152869614764
+      ],
+      "d_util_kWh": -382.8282344130059,
+      "d_util_ci": [
+        -470.0582778627671,
+        -299.6338420493476
+      ]
+    },
+    {
+      "window": "summer_2",
+      "a": "Lower-bound floored 0.70",
+      "b": "Fixed-margin (0.80)",
+      "d_adequacy": 0.003992547245142308,
+      "d_adequacy_ci": [
+        0.0005320457907931869,
+        0.008638501234636392
+      ],
+      "d_util_kWh": -108.44927792536653,
+      "d_util_ci": [
+        -132.62131820511823,
+        -84.34787439902051
+      ]
+    },
+    {
+      "window": "summer_2",
+      "a": "Stochastic LP dispatch (interval scenarios)",
+      "b": "Lower-bound policy",
+      "d_adequacy": 0.0,
+      "d_adequacy_ci": [
+        0.0,
+        0.0
+      ],
+      "d_util_kWh": -0.7591662307805381,
+      "d_util_ci": [
+        -2.0855279471451533,
+        0.43868418824000877
+      ]
+    }
+  ],
+  "lower_bound_coverage_ci": {
+    "coverage": 0.8823928813922739,
+    "ci": [
+      0.8719354807657695,
+      0.8926655661281134
+    ]
+  },
+  "coverage_ci": [
+    {
+      "regime": "low_gen",
+      "coverage": 0.9791500041369039,
+      "ci_block_bootstrap": [
+        0.9765772689053923,
+        0.9816053519839191
+      ],
+      "n": 36259,
+      "n_days_with_records": 616
+    },
+    {
+      "regime": "ramp",
+      "coverage": 0.9021410579345088,
+      "ci_block_bootstrap": [
+        0.8902852393429932,
+        0.9138539500326136
+      ],
+      "n": 7940,
+      "n_days_with_records": 602
+    },
+    {
+      "regime": "stable",
+      "coverage": 0.901100307062436,
+      "ci_block_bootstrap": [
+        0.89109011955578,
+        0.9113751261257722
+      ],
+      "n": 7816,
+      "n_days_with_records": 519
+    },
+    {
+      "regime": "high_vol",
+      "coverage": 0.9288971216870904,
+      "ci_block_bootstrap": [
+        0.9188389589784272,
+        0.9387493965818114
+      ],
+      "n": 7018,
+      "n_days_with_records": 418
+    },
+    {
+      "regime": "all",
+      "coverage": 0.9524842037504446,
+      "ci_block_bootstrap": [
+        0.9491598213126435,
+        0.95578051947551
+      ],
+      "n": 59033,
+      "n_days_with_records": 616
+    },
+    {
+      "regime": "low_gen_random",
+      "coverage": 0.9847708302826182,
+      "ci_clopper_pearson": [
+        0.9836326385920917,
+        0.9858495830618355
+      ],
+      "n": 47803
+    },
+    {
+      "regime": "ramp_random",
+      "coverage": 0.9110506894542629,
+      "ci_clopper_pearson": [
+        0.9053870949888236,
+        0.9164805660293658
+      ],
+      "n": 10298
+    },
+    {
+      "regime": "stable_random",
+      "coverage": 0.9135438463001712,
+      "ci_clopper_pearson": [
+        0.9080091626656324,
+        0.918848217913316
+      ],
+      "n": 10514
+    },
+    {
+      "regime": "high_vol_random",
+      "coverage": 0.8955031695721077,
+      "ci_clopper_pearson": [
+        0.8893720899654671,
+        0.9014050309569573
+      ],
+      "n": 10096
+    },
+    {
+      "regime": "all_random",
+      "coverage": 0.9541614259760389,
+      "ci_clopper_pearson": [
+        0.9526772212437263,
+        0.9556120388282735
+      ],
+      "n": 78711
+    }
+  ],
+  "spread_diagnosis": {
+    "spread": {
+      "spearman_absres_all_active": 0.639176944326074,
+      "spearman_shortfall_all_active": 0.14632694828926018,
+      "by_regime_absres": {
+        "low_gen": 0.4856214870067096,
+        "ramp": 0.460331217399885,
+        "stable": 0.44763401130302194,
+        "high_vol": 0.3854599091843486
+      },
+      "by_regime_shortfall": {
+        "low_gen": 0.2609333686425028,
+        "ramp": 0.1536034942901975,
+        "stable": 0.06903160592204577,
+        "high_vol": -0.08382280009968729
+      }
+    },
+    "width": {
+      "spearman_absres_all_active": 0.5124436394963396,
+      "spearman_shortfall_all_active": 0.14727356685846382,
+      "by_regime_absres": {
+        "low_gen": 0.23397397298532543,
+        "ramp": 0.15355284149980147,
+        "stable": 0.18952251179787172,
+        "high_vol": -0.08920816762637
+      },
+      "by_regime_shortfall": {
+        "low_gen": 0.1422325333404904,
+        "ramp": 0.02413164678961722,
+        "stable": -0.004342909698361263,
+        "high_vol": -0.03505919873295752
+      }
+    },
+    "U_norm": {
+      "spearman_absres_all_active": 0.6391549431503779,
+      "spearman_shortfall_all_active": 0.14639420097171676,
+      "by_regime_absres": {
+        "low_gen": 0.4856214870067096,
+        "ramp": 0.460331217399885,
+        "stable": 0.44756572795622707,
+        "high_vol": 0.3854556823258895
+      },
+      "by_regime_shortfall": {
+        "low_gen": 0.2609333686425028,
+        "ramp": 0.1536034942901975,
+        "stable": 0.06899159238155969,
+        "high_vol": -0.08305620456467534
+      }
+    },
+    "top_quartile_Unorm": {
+      "share_of_records": 0.2500089339956402,
+      "share_of_shortfall_energy": 0.46782342400961463,
+      "share_of_predicted_energy": 0.4597592428899518,
+      "mean_beta_top": 0.7718116285568901,
+      "mean_beta_rest": 0.9268502147226897
+    },
+    "policy_spread (implemented)": {
+      "alpha_u_equiv": 0.3,
+      "CE": 0.835992312952629,
+      "OCR": 0.4146088696708716,
+      "WOCR": 0.07861199416531339
+    },
+    "policy_oracle |residual| rank": {
+      "alpha_u_equiv": 0.26802630788432935,
+      "CE": 0.835992312952629,
+      "OCR": 0.409141264339063,
+      "WOCR": 0.06172964719947018
+    },
+    "policy_uniform": {
+      "alpha_u_equiv": 0.4396563930343789,
+      "CE": 0.835992312952629,
+      "OCR": 0.33920594646749813,
+      "WOCR": 0.07656024190341743
+    }
+  },
+  "monthly": [
+    {
+      "month": "2020-12",
+      "n": 1937,
+      "n_active": 468,
+      "coverage": 0.9623128549303046,
+      "lower_bound_coverage_active": 0.938034188034188,
+      "rmse": 160.2284623979323
+    },
+    {
+      "month": "2021-01",
+      "n": 2976,
+      "n_active": 807,
+      "coverage": 0.9734543010752689,
+      "lower_bound_coverage_active": 0.5576208178438662,
+      "rmse": 292.35696683044745
+    },
+    {
+      "month": "2021-02",
+      "n": 2688,
+      "n_active": 978,
+      "coverage": 0.9226190476190477,
+      "lower_bound_coverage_active": 0.9427402862985685,
+      "rmse": 276.2330373228037
+    },
+    {
+      "month": "2021-03",
+      "n": 2976,
+      "n_active": 1335,
+      "coverage": 0.960013440860215,
+      "lower_bound_coverage_active": 0.9086142322097378,
+      "rmse": 263.8769480541599
+    },
+    {
+      "month": "2021-04",
+      "n": 2880,
+      "n_active": 1544,
+      "coverage": 0.9375,
+      "lower_bound_coverage_active": 0.8775906735751295,
+      "rmse": 384.7538510540192
+    },
+    {
+      "month": "2021-05",
+      "n": 2976,
+      "n_active": 1812,
+      "coverage": 0.9334677419354839,
+      "lower_bound_coverage_active": 0.9067328918322296,
+      "rmse": 370.27451649818596
+    },
+    {
+      "month": "2021-06",
+      "n": 2880,
+      "n_active": 1855,
+      "coverage": 0.9409722222222222,
+      "lower_bound_coverage_active": 0.9088948787061994,
+      "rmse": 318.95047006490057
+    },
+    {
+      "month": "2021-07",
+      "n": 2976,
+      "n_active": 1852,
+      "coverage": 0.9338037634408602,
+      "lower_bound_coverage_active": 0.9292656587473002,
+      "rmse": 324.39321632456995
+    },
+    {
+      "month": "2021-08",
+      "n": 2976,
+      "n_active": 1668,
+      "coverage": 0.9428763440860215,
+      "lower_bound_coverage_active": 0.9028776978417267,
+      "rmse": 358.89338306411986
+    },
+    {
+      "month": "2021-09",
+      "n": 2880,
+      "n_active": 1388,
+      "coverage": 0.9652777777777778,
+      "lower_bound_coverage_active": 0.9250720461095101,
+      "rmse": 235.56766305748124
+    },
+    {
+      "month": "2021-10",
+      "n": 2880,
+      "n_active": 1142,
+      "coverage": 0.9298611111111111,
+      "lower_bound_coverage_active": 0.9194395796847635,
+      "rmse": 281.0771997832965
+    },
+    {
+      "month": "2021-11",
+      "n": 2784,
+      "n_active": 791,
+      "coverage": 0.9558189655172413,
+      "lower_bound_coverage_active": 0.8786346396965866,
+      "rmse": 179.34575998575673
+    },
+    {
+      "month": "2021-12",
+      "n": 2496,
+      "n_active": 601,
+      "coverage": 0.9807692307692307,
+      "lower_bound_coverage_active": 0.6738768718801996,
+      "rmse": 286.1137064739439
+    },
+    {
+      "month": "2022-01",
+      "n": 2592,
+      "n_active": 701,
+      "coverage": 0.9768518518518519,
+      "lower_bound_coverage_active": 0.8673323823109843,
+      "rmse": 208.92731679855072
+    },
+    {
+      "month": "2022-02",
+      "n": 2496,
+      "n_active": 886,
+      "coverage": 0.9655448717948718,
+      "lower_bound_coverage_active": 0.9029345372460497,
+      "rmse": 220.19021597239055
+    },
+    {
+      "month": "2022-03",
+      "n": 2976,
+      "n_active": 1373,
+      "coverage": 0.9694220430107527,
+      "lower_bound_coverage_active": 0.9759650400582666,
+      "rmse": 230.15135773099476
+    },
+    {
+      "month": "2022-04",
+      "n": 2880,
+      "n_active": 1552,
+      "coverage": 0.9392361111111112,
+      "lower_bound_coverage_active": 0.8962628865979382,
+      "rmse": 346.1653163975237
+    },
+    {
+      "month": "2022-05",
+      "n": 2976,
+      "n_active": 1824,
+      "coverage": 0.9475806451612904,
+      "lower_bound_coverage_active": 0.8689692982456141,
+      "rmse": 511.7188656102675
+    },
+    {
+      "month": "2022-06",
+      "n": 2880,
+      "n_active": 1854,
+      "coverage": 0.9583333333333334,
+      "lower_bound_coverage_active": 0.8694714131607335,
+      "rmse": 313.33702532298213
+    },
+    {
+      "month": "2022-07",
+      "n": 2976,
+      "n_active": 1869,
+      "coverage": 0.9522849462365591,
+      "lower_bound_coverage_active": 0.8528624933119315,
+      "rmse": 441.9690995038287
+    },
+    {
+      "month": "2022-08",
+      "n": 2952,
+      "n_active": 1683,
+      "coverage": 0.9634146341463414,
+      "lower_bound_coverage_active": 0.827688651218063,
+      "rmse": 442.638688327267
+    }
+  ],
+  "monthly_summary": {
+    "coverage_min": 0.9226190476190477,
+    "coverage_max": 0.9807692307692307,
+    "lb_min": 0.5576208178438662,
+    "lb_max": 0.9759650400582666,
+    "months_lb_below_90": 10,
+    "n_months": 21
+  },
+  "seeds": [
+    {
+      "seed": 1,
+      "RMSE": 324.2510602834033,
+      "MAE": 127.65711997231035,
+      "coverage": 0.9523825656836007,
+      "worst_regime": 0.899756753296633,
+      "eta": {
+        "low_gen": 0.0,
+        "ramp": 0.0,
+        "stable": 0.0,
+        "high_vol": 0.0
+      },
+      "CE_rccri": 0.8344261588195532,
+      "OCR_rccri": 0.19585655480832753,
+      "WOCR_rccri": 0.079004262035455,
+      "OCR_fixed": 0.17646062371893687,
+      "WOCR_fixed": 0.07004880053176697
+    },
+    {
+      "seed": 2,
+      "RMSE": 323.64118787087756,
+      "MAE": 127.50454966619424,
+      "coverage": 0.9527382989175546,
+      "worst_regime": 0.9005750798722044,
+      "eta": {
+        "low_gen": 0.0,
+        "ramp": 0.0,
+        "stable": 0.0,
+        "high_vol": 0.0
+      },
+      "CE_rccri": 0.8345582791379784,
+      "OCR_rccri": 0.19548388189656632,
+      "WOCR_rccri": 0.07865135656691122,
+      "OCR_fixed": 0.17610489048498298,
+      "WOCR_fixed": 0.06981990109446726
+    },
+    {
+      "seed": 3,
+      "RMSE": 324.0456550785259,
+      "MAE": 127.64061525541675,
+      "coverage": 0.9532634289295817,
+      "worst_regime": 0.9006297229219143,
+      "eta": {
+        "low_gen": 0.0,
+        "ramp": 0.0,
+        "stable": 0.0,
+        "high_vol": 0.0
+      },
+      "CE_rccri": 0.8363655619530652,
+      "OCR_rccri": 0.19704233225484052,
+      "WOCR_rccri": 0.07920290622606133,
+      "OCR_fixed": 0.17625734758524894,
+      "WOCR_fixed": 0.06996811602554745
+    }
+  ]
+}

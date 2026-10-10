@@ -1,0 +1,152 @@
+{
+  "chrono": {
+    "fit_s": 58.07437610626221,
+    "eta_lower": {
+      "low_gen": 20.569141182415905,
+      "ramp": 23.096203883161905,
+      "stable": 26.472507766926128,
+      "high_vol": 41.456701141232315
+    },
+    "eta_two_sided": {
+      "low_gen": 30.225769965890578,
+      "ramp": 55.84916661277873,
+      "stable": 145.25399013587412,
+      "high_vol": 197.8629691366814
+    },
+    "n_cal_active": {
+      "low_gen": 2340,
+      "ramp": 3822,
+      "stable": 3822,
+      "high_vol": 3823
+    },
+    "n_active_test": 27983,
+    "lower_bound_coverage_active": 0.8823928813922739,
+    "lower_bound_coverage_by_regime": {
+      "low_gen": 0.8587060856210406,
+      "ramp": 0.8909319899244332,
+      "stable": 0.8897134083930399,
+      "high_vol": 0.8821601595896267
+    },
+    "raw_q10_coverage_active": 0.836436407819033,
+    "mean_L_over_pred_active": 0.5260462106245543,
+    "mean_L_over_pred_by_regime": {
+      "low_gen": 0.40474247280484393,
+      "ramp": 0.4309792998794353,
+      "stable": 0.5567677407476737,
+      "high_vol": 0.6894236632003329
+    },
+    "two_sided_coverage_active": 0.8747096451416931,
+    "two_sided_coverage_by_regime": {
+      "low_gen": 0.8583221347667499,
+      "ramp": 0.8641057934508816,
+      "stable": 0.8865148413510747,
+      "high_vol": 0.8857224280421773
+    },
+    "two_sided_median_width_active": 995.4249919832978,
+    "original_cqr_coverage_active": 0.9086945645570524,
+    "original_cqr_median_width_active": 1341.4067680152357,
+    "original_q10_zero_frac": 1.0,
+    "original_q10_zero_frac_active": 1.0,
+    "P_y_ge_commit_active_spread": 0.5853911303291284,
+    "P_y_ge_commit_active_lower": 0.8823928813922739,
+    "P_y_ge_commit_active_lower_floored": 0.7519922810277668,
+    "policies": {
+      "Lower conformal bound (active-conditional)": {
+        "CE": 0.6323229891897381,
+        "OCR": 0.05574847966391679,
+        "WOCR": 0.03605951021411638,
+        "mean_shortfall_Wh": 246.9030893779544,
+        "mean_withheld_Wh": 222.10463462582658
+      },
+      "Lower bound floored at 0.70*yhat": {
+        "CE": 0.7414236819722538,
+        "OCR": 0.11756136398285705,
+        "WOCR": 0.056083496526514225,
+        "mean_shortfall_Wh": 213.51956523367383,
+        "mean_withheld_Wh": 156.24364299376055
+      },
+      "Lower bound capped to [0.70,1]*yhat": {
+        "CE": 0.7411777552832359,
+        "OCR": 0.11720563074890315,
+        "WOCR": 0.05595184357653808,
+        "mean_shortfall_Wh": 213.59400444816308,
+        "mean_withheld_Wh": 156.24364299376055
+      }
+    }
+  },
+  "random": {
+    "fit_s": 53.149656772613525,
+    "eta_lower": {
+      "low_gen": 26.53114357197991,
+      "ramp": 9.489120475738702,
+      "stable": 1.4457777029872432,
+      "high_vol": 0.0
+    },
+    "eta_two_sided": {
+      "low_gen": 32.85085575734775,
+      "ramp": 48.24951140790711,
+      "stable": 156.81525945932594,
+      "high_vol": 167.19925572919328
+    },
+    "n_cal_active": {
+      "low_gen": 1760,
+      "ramp": 3089,
+      "stable": 3089,
+      "high_vol": 3090
+    },
+    "n_active_test": 36754,
+    "lower_bound_coverage_active": 0.9069489035207052,
+    "lower_bound_coverage_by_regime": {
+      "low_gen": 0.891549777625727,
+      "ramp": 0.9102738395805011,
+      "stable": 0.8970895948259464,
+      "high_vol": 0.9227416798732171
+    },
+    "raw_q10_coverage_active": 0.8737552375251674,
+    "mean_L_over_pred_active": 0.5378214556326629,
+    "mean_L_over_pred_by_regime": {
+      "low_gen": 0.3578613586690784,
+      "ramp": 0.463198092940471,
+      "stable": 0.5659298865921013,
+      "high_vol": 0.6888699969109686
+    },
+    "two_sided_coverage_active": 0.8985688632529792,
+    "two_sided_coverage_by_regime": {
+      "low_gen": 0.8869312350325008,
+      "ramp": 0.9019227034375606,
+      "stable": 0.9046984972417729,
+      "high_vol": 0.8955031695721077
+    },
+    "two_sided_median_width_active": 988.8395430679263,
+    "original_cqr_coverage_active": 0.910921260270991,
+    "original_cqr_median_width_active": 1370.6646519661936,
+    "original_q10_zero_frac": 1.0,
+    "original_q10_zero_frac_active": 1.0,
+    "P_y_ge_commit_active_spread": 0.6243402078685313,
+    "P_y_ge_commit_active_lower": 0.9069489035207052,
+    "P_y_ge_commit_active_lower_floored": 0.7892746367742287,
+    "policies": {
+      "Lower conformal bound (active-conditional)": {
+        "CE": 0.6441750155577393,
+        "OCR": 0.043450089568167094,
+        "WOCR": 0.0245674467125377,
+        "mean_shortfall_Wh": 210.12912460892304,
+        "mean_withheld_Wh": 205.84229730464347
+      },
+      "Lower bound floored at 0.70*yhat": {
+        "CE": 0.747849372272295,
+        "OCR": 0.09839793675598074,
+        "WOCR": 0.03910434207494923,
+        "mean_shortfall_Wh": 171.46131598884259,
+        "mean_withheld_Wh": 146.0308409437799
+      },
+      "Lower bound capped to [0.70,1]*yhat": {
+        "CE": 0.7468770296448044,
+        "OCR": 0.09772458741471968,
+        "WOCR": 0.0382784592614202,
+        "mean_shortfall_Wh": 168.77679439046625,
+        "mean_withheld_Wh": 146.0308409437799
+      }
+    }
+  }
+}
