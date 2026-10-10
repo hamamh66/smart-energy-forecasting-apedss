@@ -1,33 +1,33 @@
 {
   "lime": {
     "n": 200,
-    "mean_R2": 0.5244166423632823,
-    "median_R2": 0.8075508874153696,
-    "mean_wRMSE": 479.46886252153723,
-    "mean_wMAE": 342.55122401635623,
-    "mean_local_abs_err": 644.4536422244736,
-    "mean_yhat": 1251.033202777778,
-    "wRMSE_over_yhat": 1.8225590318136506,
+    "mean_R2": 0.5054951040115785,
+    "median_R2": 0.8075446184492143,
+    "mean_wRMSE": 489.4436428971083,
+    "mean_wMAE": 351.4525111686713,
+    "mean_local_abs_err": 643.4516367632635,
+    "mean_yhat": 1331.2169891666667,
+    "wRMSE_over_yhat": 1.8784713219254683,
     "by_regime": {
       "high_vol": {
-        "lime_R2": 0.8132122690961796,
-        "lime_wRMSE": 328.5134034660687,
-        "lime_wMAE": 206.60664999698506
+        "lime_R2": 0.8131491907322084,
+        "lime_wRMSE": 328.8817832224307,
+        "lime_wMAE": 206.63016697620375
       },
       "low_gen": {
-        "lime_R2": 0.07509927189843404,
-        "lime_wRMSE": 715.9923212434918,
-        "lime_wMAE": 555.880757499997
+        "lime_R2": 0.052702315878938366,
+        "lime_wRMSE": 727.0993455849026,
+        "lime_wMAE": 565.4492184019012
       },
       "ramp": {
-        "lime_R2": 0.2838189051833967,
-        "lime_wRMSE": 605.3195623164875,
-        "lime_wMAE": 456.0297264035407
+        "lime_R2": 0.20803455647118207,
+        "lime_wRMSE": 645.1465996561045,
+        "lime_wMAE": 491.72770771715335
       },
       "stable": {
-        "lime_R2": 0.7883569615422318,
-        "lime_wRMSE": 340.4602724254721,
-        "lime_wMAE": 217.04785410986722
+        "lime_R2": 0.7528362371896621,
+        "lime_wRMSE": 359.00620111192256,
+        "lime_wMAE": 234.21301481633512
       }
     },
     "top_feature_counts": {
@@ -66,7 +66,7 @@
       ],
       [
         "15.00 < sunlightTime <= 375.00",
-        52.38704901077653
+        52.38704901077652
       ],
       [
         "540.00 < dayLength <= 720.00",
@@ -100,11 +100,11 @@
       ],
       [
         "540.00 < dayLength <= 720.00",
-        54.31852523701533
+        54.31852523701535
       ],
       [
         "snow_1h <= 0.00",
-        41.2762486557606
+        41.27624865576061
       ]
     ],
     "lime_R2": 0.8184095820314681
@@ -130,7 +130,7 @@
       ],
       [
         "540.00 < dayLength <= 720.00",
-        64.61520488200094
+        64.61520488200095
       ],
       [
         "hour_cos > 0.71",
@@ -138,7 +138,7 @@
       ],
       [
         "snow_1h <= 0.00",
-        -48.711669795175595
+        -48.71166979517561
       ]
     ],
     "lime_R2": 0.38242772572018635
@@ -942,25 +942,25 @@
       "l1": 1.0,
       "l2": 1.0,
       "l3": 1.0,
-      "agreement_with_rule": 0.45084515598756386,
+      "agreement_with_rule": 0.48890882986360373,
       "frac_normal_operation": 0.0,
-      "frac_battery_activation": 0.6064038880749026,
+      "frac_battery_activation": 0.6279612347451543,
       "frac_controlled_load_adjustment": 0.0,
-      "frac_energy_storage": 0.39359611192509736,
+      "frac_energy_storage": 0.37203876525484564,
       "frac_hold_and_review": 0.0
     },
     "agreement_range": [
-      0.32519744130364864,
-      0.6186970660758317
+      0.3442211055276382,
+      0.5926058865757359
     ],
     "rule_action_dist_active": {
-      "normal_operation": 0.04063181217167566,
-      "battery_activation": 0.41964764321195014,
-      "controlled_load_adjustment": 0.13754779687667512,
-      "energy_storage": 0.031197512775613764,
-      "hold_and_review": 0.37097523496408535
+      "normal_operation": 0.04687724335965542,
+      "battery_activation": 0.4524766690595836,
+      "controlled_load_adjustment": 0.14156496769562096,
+      "energy_storage": 0.0364321608040201,
+      "hold_and_review": 0.3226489590811199
     },
-    "n_active": 27983,
+    "n_active": 27860,
     "params": {
       "BATT_FRAC": 0.5,
       "LOAD_FRAC": 0.3,
@@ -973,76 +973,76 @@
   },
   "action_table": {
     "battery_activation": {
-      "n": 11743,
-      "mean_pred": 245.906,
-      "mean_commit": 232.355,
-      "mean_U": 0.144,
-      "mean_W": 467.161,
-      "mean_ESI": 0.243,
-      "share": 0.1989
+      "n": 12606,
+      "mean_pred": 275.192,
+      "mean_commit": 258.403,
+      "mean_U": 0.157,
+      "mean_W": 518.785,
+      "mean_ESI": 0.237,
+      "share": 0.2135
     },
     "controlled_load_adjustment": {
-      "n": 3849,
-      "mean_pred": 772.101,
-      "mean_commit": 685.22,
-      "mean_U": 0.357,
-      "mean_W": 1277.116,
-      "mean_ESI": 0.764,
-      "share": 0.0652
+      "n": 3944,
+      "mean_pred": 912.669,
+      "mean_commit": 795.942,
+      "mean_U": 0.407,
+      "mean_W": 1454.523,
+      "mean_ESI": 0.785,
+      "share": 0.0668
     },
     "energy_storage": {
-      "n": 873,
-      "mean_pred": 1461.833,
-      "mean_commit": 1260.197,
-      "mean_U": 0.451,
-      "mean_W": 1812.536,
-      "mean_ESI": 1.447,
-      "share": 0.0148
+      "n": 1015,
+      "mean_pred": 1698.364,
+      "mean_commit": 1472.873,
+      "mean_U": 0.436,
+      "mean_W": 2099.282,
+      "mean_ESI": 1.461,
+      "share": 0.0172
     },
     "hold_and_review": {
-      "n": 10381,
-      "mean_pred": 2611.889,
-      "mean_commit": 2132.369,
-      "mean_U": 0.622,
-      "mean_W": 3233.289,
-      "mean_ESI": 2.586,
-      "share": 0.1759
+      "n": 8989,
+      "mean_pred": 2779.688,
+      "mean_commit": 2263.411,
+      "mean_U": 0.637,
+      "mean_W": 3396.53,
+      "mean_ESI": 2.391,
+      "share": 0.1523
     },
     "normal_operation": {
-      "n": 1137,
-      "mean_pred": 1165.702,
-      "mean_commit": 1001.119,
-      "mean_U": 0.459,
-      "mean_W": 1652.501,
-      "mean_ESI": 1.154,
-      "share": 0.0193
+      "n": 1306,
+      "mean_pred": 1370.365,
+      "mean_commit": 1156.51,
+      "mean_U": 0.508,
+      "mean_W": 1892.132,
+      "mean_ESI": 1.179,
+      "share": 0.0221
     },
     "renewable_idle_monitoring": {
-      "n": 31050,
-      "mean_pred": 1.979,
+      "n": 31173,
+      "mean_pred": 2.174,
       "mean_commit": 0.0,
       "mean_U": 0.005,
-      "mean_W": 6.682,
+      "mean_W": 7.225,
       "mean_ESI": 0.002,
-      "share": 0.526
+      "share": 0.5281
     }
   },
   "utility_components_by_action": [
     {
       "action": "battery_activation",
-      "n": 16969,
-      "S": 0.7447071949618747,
-      "C": 0.33858172939163655,
+      "n": 17495,
+      "S": 0.75687612295885,
+      "C": 0.34809909770115943,
       "G": 1.0,
-      "U": 1.406125465570238
+      "U": 1.4087770252576906
     },
     {
       "action": "energy_storage",
-      "n": 11014,
-      "S": 0.6327600128009999,
-      "C": 0.1675619190794461,
+      "n": 10365,
+      "S": 0.6761197036758251,
+      "C": 0.1631816333937634,
       "G": 1.0,
-      "U": 1.4651980937215536
+      "U": 1.5129380702820616
     }
   ]
 }

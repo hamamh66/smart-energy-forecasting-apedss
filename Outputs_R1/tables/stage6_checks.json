@@ -1,13 +1,13 @@
 {
   "chrono": {
     "cutpoints_calibration": [
-      192.93941666666666,
-      688.6268055555555,
-      2128.808958333333
+      172.0,
+      578.0,
+      1917.0
     ],
     "cutpoints_proper_train_pred": [
       137.55833333333342,
-      504.47694444444426,
+      504.47694444444437,
       1774.170944444444
     ],
     "cutpoints_proper_train_actual": [
@@ -15,17 +15,17 @@
       578.0,
       1917.0
     ],
-    "test_regime_agreement_pred": 0.9109819931224908,
-    "test_regime_agreement_actual": 0.9561601138346348
+    "test_regime_agreement_pred": 0.9548218792878559,
+    "test_regime_agreement_actual": 1.0
   },
   "random": {
     "cutpoints_calibration": [
-      161.26715277777777,
-      571.8330555555556,
-      1874.7436111111106
+      178.0,
+      613.0,
+      1963.0
     ],
     "cutpoints_proper_train_pred": [
-      145.96048611111118,
+      145.96048611111115,
       542.1351388888888,
       1838.176388888889
     ],
@@ -34,7 +34,7 @@
       613.0,
       1963.0
     ],
-    "test_regime_agreement_pred": 0.983394951150411,
-    "test_regime_agreement_actual": 0.9780081564203225
+    "test_regime_agreement_pred": 0.9614031075707334,
+    "test_regime_agreement_actual": 1.0
   }
 }
